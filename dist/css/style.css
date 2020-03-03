@@ -438,6 +438,10 @@ h6 {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 .mt-2 {
   margin-top: 2px;
 }
