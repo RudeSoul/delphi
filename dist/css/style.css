@@ -346,6 +346,7 @@ template {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 *::after {
@@ -464,6 +465,47 @@ svg {
 
 .ml-0 {
   margin-left: 0px;
+}
+
+.dropdown-options {
+  width: 100%;
+  display: none;
+  background: inherit;
+  margin-bottom: 12px;
+}
+
+.dropdown-options li {
+  display: block;
+  margin-bottom: 5px;
+  list-style: square;
+}
+
+.dropdown-options li a {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.burger-menu__items {
+  margin-left: 232px;
+}
+
+.burger-menu__items ul li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  margin-right: 30px;
+}
+
+.burger-menu__items ul li a {
+  text-align: center;
+}
+
+.burger-menu__items .burger-menu__items--active a {
+  color: #ffffff;
 }
 
 .rectangle {
@@ -809,23 +851,6 @@ svg {
   margin-left: 10px;
   margin-right: 10px;
   vertical-align: top;
-}
-
-.dropdown-options {
-  width: 100%;
-  display: none;
-  background: inherit;
-  margin-bottom: 12px;
-}
-
-.dropdown-options li {
-  display: block;
-  margin-bottom: 5px;
-  list-style: square;
-}
-
-.dropdown-options li a {
-  color: rgba(255, 255, 255, 0.87);
 }
 
 .header {
@@ -1510,7 +1535,7 @@ svg {
   margin-top: 8px;
 }
 
-.documents__content-card--header {
+.documents__content-card-header {
   padding-top: 8px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1520,7 +1545,7 @@ svg {
       align-content: center;
 }
 
-.documents__content-card--header .header-left .header-left__content {
+.documents__content-card-header .header-left .header-left__content {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1528,7 +1553,7 @@ svg {
   margin-left: 8px;
 }
 
-.documents__content-card--header .filename {
+.documents__content-card-header .filename {
   width: 85px;
   font-style: normal;
   font-weight: 500;
@@ -1537,7 +1562,7 @@ svg {
   color: #223741;
 }
 
-.documents__content-card--header .date {
+.documents__content-card-header .date {
   width: 111px;
   font-family: Roboto;
   font-style: normal;
@@ -1549,7 +1574,7 @@ svg {
   opacity: 0.7;
 }
 
-.documents__content-card--header .header-right {
+.documents__content-card-header .header-right {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1557,14 +1582,14 @@ svg {
   margin-left: 82px;
 }
 
-.documents__content-card--header .header-right .btn-1 {
+.documents__content-card-header .header-right .btn-1 {
   background-color: #ffffff;
   -ms-flex-line-pack: center;
       align-content: center;
   margin-left: 4px;
 }
 
-.documents__content-card--header .header-right .btn-1 .tagname {
+.documents__content-card-header .header-right .btn-1 .tagname {
   width: 37px;
   color: #000000;
   font-style: normal;
@@ -1577,7 +1602,7 @@ svg {
       align-self: center;
 }
 
-.documents__content-card--header .header-right .btn-1 .image {
+.documents__content-card-header .header-right .btn-1 .image {
   width: 14px;
   height: 14px;
   margin: 0px 8px 0px 8px;
@@ -1585,25 +1610,25 @@ svg {
       align-content: center;
 }
 
-.documents__content-card--header .header-right .btn-1 .image img {
+.documents__content-card-header .header-right .btn-1 .image img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.documents__content-card--header .header-right .more {
+.documents__content-card-header .header-right .more {
   margin-left: 8px;
   margin-top: 8px;
   width: 24px;
   height: 24px;
 }
 
-.documents__content-card--content {
+.documents__content-card-content {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 8px;
 }
 
-.documents__content-card--content p {
+.documents__content-card-content p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1612,7 +1637,7 @@ svg {
   color: #223741;
 }
 
-.documents__content-card--content p a {
+.documents__content-card-content p a {
   color: #6236FF;
 }
 
