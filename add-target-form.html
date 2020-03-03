@@ -15,7 +15,8 @@
 </head>
 
 <body>
-    <div class="flex card add-target-form">
+
+    <main class="flex card add-target-form">
         <div class="add-target-form__left">
             <div class="flex add-target-left__header">
                 <h2>Target Forms</h2>
@@ -159,17 +160,14 @@
                 </div>
 
             </div>
-
-
-
         </div>
 
         <div class="add-target-form__right">
             <div class="add-target-right__header">
                 <h1>Add Target Form</h1>
             </div>
-            <div class="add-target-right__body">
-                <div class="flex add-target__menu-form">
+            <article class="add-target-right__body">
+                <section class="flex add-target__menu-form">
 
                     <div class="form-btn form--active">
                         <div class="label">
@@ -186,12 +184,12 @@
                             References
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <div class="rectangle"></div>
                 <div class="rectangle yellow-rectangle"></div>
                 <div class="rectangle electric-rectangle"></div>
-                <div class="flex circular-indicator__container">
+                <section class="flex circular-indicator__container">
                     <div class="flex add-target-form__indicator">
                         <div class="circular-indicator circular-indicator--selective-yellow ">
                         </div>
@@ -202,39 +200,39 @@
                         </div>
                         <div class="flex label-circular-indicator">NTRK1</div>
                     </div>
-                </div>
+                </section>
 
                 <div class="flex add-target-form-btns">
-                    <div class="rect-btn selective-yellow--btn">
+                    <button class="rect-btn selective-yellow--btn">
                         <span class="value">
                             Add Tag
                         </span>
-                    </div>
-                    <div class="rect-btn pastel-green--btn">
+                    </button>
+                    <button class="rect-btn pastel-green--btn">
                         <span class="value">
                             Add Linker
                         </span>
-                    </div>
-                    <div class="rect-btn royal-heath--btn">
+                    </button>
+                    <button class="rect-btn royal-heath--btn">
                         <span class="value">
                             Add Fusion
                         </span>
-                    </div>
-                    <div class="rect-btn doger-blue--btn">
-                        <span class="value">
-                            Add Cleavage Site
-                        </span>
-                    </div>
-                    <div class="rect-btn electric-violet--btn">
-                        <span class="value">
-                            Add Target
-                        </span>
-                    </div>
+                        </button4>
+                        <button class="rect-btn doger-blue--btn">
+                            <span class="value">
+                                Add Cleavage Site
+                            </span>
+                        </button>
+                        <button class="rect-btn electric-violet--btn">
+                            <span class="value">
+                                Add Target
+                            </span>
+                        </button>
                 </div>
 
                 <div class="flex">
-                    <div class="flex add-target__form">
-                        <div class="form__name add-target__form--width-l">
+                    <article class="flex add-target__form">
+                        <section class="form__name add-target__form--width-l">
                             <div class="label">
                                 name
                             </div>
@@ -242,8 +240,8 @@
                                 Avi-NTRK1(1-509; L93P, A110D)-6H P Mm
                             </div>
                             <div class="form-rectangle add-target__form--width-l"></div>
-                        </div>
-                        <div class="form__components add-target__form--width-l">
+                        </section>
+                        <section class="form__components add-target__form--width-l">
                             <div class="label">
                                 Target Form Alias
                             </div>
@@ -251,54 +249,61 @@
                                 Avi-NTRK1 -KD
                             </div>
                             <div class="form-rectangle add-target__form--width-l"></div>
-                        </div>
+                        </section>
+                        <div class="flex add-target__form-row">
+                            <section class="form__components add-target__form--width-s">
+                                <div class="label">
+                                    UniProt Accession
+                                </div>
+                                <div class="placeholder">
+                                    P04629
+                                </div>
+                                <div class="form-rectangle add-target__form--width-s"></div>
+                            </section>
 
-                        <div class="form__components add-target__form--width-s">
-                            <div class="label">
-                                UniProt Accession
-                            </div>
-                            <div class="placeholder">
-                                P04629
-                            </div>
-                            <div class="form-rectangle add-target__form--width-s"></div>
+                            <section
+                                class="form__components add-target__form--width-s form__components--add-icon ml-10">
+                                <div class="label">
+                                    Species
+                                </div>
+                                <div class="placeholder">
+                                    Mouse (Mm)
+                                </div>
+                                <div class="add-icon">
+                                    <img src="images/add-target-form/ic_add_circle_24pxL.png" alt="">
+                                </div>
+                                <div class="form-rectangle add-target__form--width-s"></div>
+                            </section>
+
                         </div>
-                        <div class="form__components add-target__form--width-s form__components--add-icon ml-10">
-                            <div class="label">
-                                Species
-                            </div>
-                            <div class="placeholder">
-                                Mouse (Mm)
-                            </div>
-                            <div class="add-icon">
-                                <img src="images/add-target-form/ic_add_circle_24pxL.png" alt="">
-                            </div>
-                            <div class="form-rectangle add-target__form--width-s"></div>
+                        <div class="flex add-target__form-row">
+                            <section class="form__components add-target__form--width-s form__components--add-icon ">
+                                <div class="label">
+                                    Species
+                                </div>
+                                <div class="placeholder">
+                                    Mouse (Mm)
+                                </div>
+                                <div class="add-icon">
+                                    <img src="images/add-target-form/arrow_drop_down_3.png" alt="">
+                                </div>
+                                <div class="form-rectangle add-target__form--width-s"></div>
+                            </section>
+                            <section
+                                class="form__components add-target__form--width-s form__components--add-icon ml-10">
+                                <div class="label">
+                                    Species
+                                </div>
+                                <div class="placeholder">
+                                    Mouse (Mm)
+                                </div>
+                                <div class="add-icon">
+                                    <img src="images/add-target-form/ic_add_circle_24pxL.png" alt="">
+                                </div>
+                                <div class="form-rectangle add-target__form--width-s"></div>
+                            </section>
                         </div>
-                        <div class="form__components add-target__form--width-s form__components--add-icon ">
-                            <div class="label">
-                                Species
-                            </div>
-                            <div class="placeholder">
-                                Mouse (Mm)
-                            </div>
-                            <div class="add-icon">
-                                <img src="images/add-target-form/arrow_drop_down_3.png" alt="">
-                            </div>
-                            <div class="form-rectangle add-target__form--width-s"></div>
-                        </div>
-                        <div class="form__components add-target__form--width-s form__components--add-icon ml-10">
-                            <div class="label">
-                                Species
-                            </div>
-                            <div class="placeholder">
-                                Mouse (Mm)
-                            </div>
-                            <div class="add-icon">
-                                <img src="images/add-target-form/ic_add_circle_24pxL.png" alt="">
-                            </div>
-                            <div class="form-rectangle add-target__form--width-s"></div>
-                        </div>
-                        <div class="form__components add-target__form--width-s form__components--add-icon ">
+                        <section class="form__components add-target__form--width-s form__components--add-icon  mt-32 ">
                             <div class="label">
                                 Species
                             </div>
@@ -307,139 +312,139 @@
                             </div>
 
                             <div class="form-rectangle add-target__form--width-s"></div>
-                        </div>
+                        </section>
 
-                        <div class="form__components add-target__form--width-l form__components--add-icon ">
+                        <section class="form__components add-target__form--width-l form__components--add-icon mt-42">
                             <div class="label">
                                 Variant
                             </div>
 
-                            <div class="flex add-target__form--width-l mt-8">
+                            <div class="flex mt-8">
 
-                                <div class="flex btn-rounded add-target-form__btns bg--shamrock">
+                                <button class="flex btn-rounded add-target-form__btns bg--shamrock">
                                     <span>L98R</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
-                                <div class="flex btn-rounded add-target-form__btns bg--shamrock">
+                                </button>
+                                <button class="flex btn-rounded add-target-form__btns bg--shamrock">
                                     <span>L98R</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
-                                <div class="flex btn-rounded add-target-form__btns bg--shamrock">
+                                </button>
+                                <button class="flex btn-rounded add-target-form__btns bg--shamrock">
                                     <span>A110D</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
+                                </button>
                             </div>
                             <div class="add-icon">
                                 <img src="images/add-target-form/arrow_drop_down_3.png" alt="">
                             </div>
                             <div class="form-rectangle add-target__form--width-l"></div>
-                        </div>
+                        </section>
 
-                        <div class="form__components add-target__form--width-l form__components--add-icon ">
+                        <section class="form__components add-target__form--width-l form__components--add-icon mt-32">
                             <div class="label">
                                 Domains
                             </div>
 
                             <div class="flex add-target__form--width-l mt-8 justify-space-btwn">
 
-                                <div class="flex btn-rounded add-target-form__btns bg--electric-violet">
+                                <button class="flex btn-rounded add-target-form__btns bg--electric-violet">
                                     <span>L98R</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
-                                <div class="flex btn-rounded add-target-form__btns bg--blaze-orange">
+                                </button>
+                                <button class="flex btn-rounded add-target-form__btns bg--blaze-orange">
                                     <span>L98R</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
-                                <div class="flex btn-rounded add-target-form__btns bg--turquoise">
+                                </button>
+                                <button class="flex btn-rounded add-target-form__btns bg--turquoise">
                                     <span>A110D</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
-                                <div class="flex btn-rounded add-target-form__btns bg--azure-radiance">
+                                </button>
+                                <button class="flex btn-rounded add-target-form__btns bg--azure-radiance">
                                     <span>Protein Kinase</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
+                                </button>
                             </div>
 
                             <div class="form-rectangle add-target__form--width-l"></div>
-                        </div>
+                        </section>
 
 
-                        <div class="form__components add-target__form--width-l form__components--add-icon ">
+                        <section class="form__components add-target__form--width-l form__components--add-icon ">
                             <div class="label">
                                 Domains
                             </div>
 
                             <div class="flex add-target__form--width-l mt-8 justify-space-btwn">
 
-                                <div class="flex btn-rounded add-target-form__btns bg--electric-violet">
+                                <button class="flex btn-rounded add-target-form__btns bg--electric-violet">
                                     <span>Interaction with SQSTM1</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
+                                </button>
 
                             </div>
 
                             <div class="form-rectangle add-target__form--width-l"></div>
-                        </div>
+                        </section>
 
-                        <div class="form__components add-target__form--width-l form__components--add-icon ">
+                        <section class="form__components add-target__form--width-l form__components--add-icon ">
                             <div class="label">
                                 Domains
                             </div>
 
                             <div class="flex add-target__form--width-l mt-8 ">
 
-                                <div class="flex btn-rounded add-target-form__btns bg--electric-violet">
+                                <button class="flex btn-rounded add-target-form__btns bg--electric-violet">
                                     <span> SQSTM1</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
-                                <div class="flex btn-rounded add-target-form__btns bg--electric-violet">
+                                </button>
+                                <button class="flex btn-rounded add-target-form__btns bg--electric-violet">
                                     <span>Interaction</span>
                                     <span class="image">
                                         <img src="images/add-target-form/ic_close_24px.png" alt="close">
                                     </span>
-                                </div>
+                                </button>
 
                             </div>
 
                             <div class="form-rectangle add-target__form--width-l"></div>
+                        </section>
+                        <div class="flex">
+                            <section class="flex add-target-form__checkboxes">
+                                <div class="checkbox">
+                                    <img src="images/add-target-form/ic_check_box_outline_blank_24px.png" alt="">
+                                </div>
+                                <div class="checkbox-value ml-4">
+                                    Viable
+                                </div>
+                            </section>
+                            <section class="flex add-target-form__checkboxes">
+                                <div class="checkbox">
+                                    <img src="images/add-target-form/ic_check_box_outline_blank_24px.png" alt="">
+                                </div>
+                                <div class="checkbox-value ml-4">
+                                    Full Length
+                                </div>
+                            </section>
                         </div>
-
-                        <div class="flex add-target-form__checkboxes">
-                            <div class="checkbox">
-                                <img src="images/add-target-form/ic_check_box_outline_blank_24px.png" alt="">
-                            </div>
-                            <div class="checkbox-value ml-4">
-                                Viable
-                            </div>
-                        </div>
-                        <div class="flex add-target-form__checkboxes ml-32">
-                            <div class="checkbox">
-                                <img src="images/add-target-form/ic_check_box_outline_blank_24px.png" alt="">
-                            </div>
-                            <div class="checkbox-value ml-4">
-                                Full Length
-                            </div>
-                        </div>
-
-                        <div class="form__components add-target__form--width-l form__components--add-icon">
+                        <section class="form__components add-target__form--width-l form__components--add-icon">
                             <div class="label">
                                 Expression System
                             </div>
@@ -450,77 +455,181 @@
                                 <img src="images/add-target-form/arrow_drop_down_3.png" alt="">
                             </div>
                             <div class="form-rectangle add-target__form--width-l"></div>
-                        </div>
+                        </section>
 
-                        <div class="form__components add-target__form--width-l form__components--add-icon">
+                        <section class="form__components add-target__form--width-l form__components--add-icon">
                             <div class="label">
                                 Ligand
                             </div>
 
                             <div class="form-rectangle add-target__form--width-l"></div>
-                        </div>
+                        </section>
                         <!-- <div class="form__rectangle"></div>  here comes one border-->
-
-                        <div class="rect-btn french-rose--btn">
-                            <span class="value">
-                                save
-                            </span>
-                        </div>
-
-                        <div class="rect-btn default--btn">
-                            <span class="value">
-                                cancel
-                            </span>
-                        </div>
 
                         <!-- <div class="horizontal__rect"></div> -->
 
-                    </div>
+                    </article>
 
 
                     <div class="flex add-target-form__details">
-                        <div class="inline-block structural-biological-image">
+                        <div class="structural-biological-image">
+                            <img src="images/add-target-form/Bitmap.png" alt="">
 
-                        </div>
-                        <div class="flex rect-btn killarney--btn">
-                            <span class="value">
-                                Copy to clipboard
-                            </span>
-                        </div>
-                        <div class="flex unknown-data"></div>
-                        <div class="indicator">
-                            <div class="flex add-target-form__indicator">
-                                <div class="circular-indicator circular-indicator--selective-yellow ">
-                                </div>
-                                <div class="flex label-circular-indicator">LRR 1 (90-111)</div>
-                            </div>
-                            <div class="flex add-target-form__indicator ">
-                                <div class="circular-indicator circular-indicator--selective-yellow ">
-                                </div>
-                                <div class="flex label-circular-indicator">LRR 1 (90-112)</div>
-                            </div>
-                        </div>
-                        <div class="indicator">
-                            <div class="flex add-target-form__indicator ml-36">
-                                <div class="circular-indicator circular-indicator--selective-yellow ">
-                                </div>
-                                <div class="flex label-circular-indicator">LRR 1 (90-113)</div>
-                            </div>
-                            <div class="flex add-target-form__indicator ml-36">
-                                <div class="circular-indicator circular-indicator--selective-yellow">
-                                </div>
-                                <div class="flex label-circular-indicator">LRR 1 (90-114)</div>
-                            </div>
 
+
+                            <button class="rect-btn killarney--btn">
+                                <span class="value">
+                                    Copy to clipboard
+                                </span>
+                            </button>
                         </div>
+                        <article class="flex marked-data">
+                            <img src="images/add-target-form/Bitmap1.png" alt="">
+                            <section>
+                                <div class="flex add-target-form__indicator">
+                                    <div class="circular-indicator circular-indicator--selective-yellow ">
+                                    </div>
+                                    <div class="flex label-circular-indicator">LRR 1 (90-111)</div>
+                                </div>
+                                <div class="flex add-target-form__indicator ">
+                                    <div class="circular-indicator circular-indicator--selective-yellow ">
+                                    </div>
+                                    <div class="flex label-circular-indicator">LRR 1 (90-112)</div>
+                                </div>
+                            </section>
+                            <section>
+
+                                <div class="flex add-target-form__indicator">
+                                    <div class="circular-indicator circular-indicator--selective-yellow ">
+                                    </div>
+                                    <div class="flex label-circular-indicator">LRR 1 (90-113)</div>
+                                </div>
+                                <div class="flex add-target-form__indicator">
+                                    <div class="circular-indicator circular-indicator--selective-yellow">
+                                    </div>
+                                    <div class="flex label-circular-indicator">LRR 1 (90-114)</div>
+                                </div>
+                            </section>
+
+                        </article>
                         <div class="rectangle"></div>
+
+                        <article class="flex add-target-form__position-annotation">
+                            <section class="add-target-form__position">
+                                <div class="label">
+                                    Position
+                                </div>
+                                <div class="add-target-form__buttons">
+                                    <button class="flex btn-rounded add-target-form__btns bg--pureto-rico">
+                                        <span>1-20</span>
+
+                                    </button>
+                                    <button class="flex btn-rounded add-target-form__btns bg--royal-health">
+                                        <span>1-20</span>
+                                    </button>
+                                </div>
+                            </section>
+                            <section class="add-target-form__annotation">
+                                <div class="label">
+                                    Annotation
+                                </div>
+                                <div class="add-target-form__annotation-labels labels--1">
+                                    This look intresting
+                                </div>
+                                <div class="add-target-form__annotation-labels labels--2">
+                                    This look intresting
+                                </div>
+                            </section>
+                        </article>
+                        <div class="rectangle"></div>
+
+                        <article class="add-target-form__comments">
+                            <header>
+                                Comments
+                            </header>
+                            <section class="flex comment">
+                                <div class="flex author-profile">
+                                    <img src="images/add-target-form/Avatar_1.png" alt="">
+                                </div>
+                                <div class="author-name">
+                                    Mitchell Robertson
+                                </div>
+                                <div class="author-comment">
+                                    Officia officia duis nostrud dolor est laborum non ea eu minim incididunt. Magna
+                                    fugiat deserunt aliquip consectetur elit non.
+                                </div>
+                            </section>
+                            <section class="flex comment">
+                                <div class="flex author-profile">
+                                    <img src="images/add-target-form/Avatar_1.png" alt="">
+                                </div>
+                                <div class="author-name">
+                                    Mitchell Robertson
+                                </div>
+                                <div class="author-comment">
+                                    Officia officia duis nostrud dolor est laborum non ea eu minim incididunt. Magna
+                                    fugiat deserunt aliquip consectetur elit non.
+                                </div>
+                            </section>
+                            <section class="flex comment">
+                                <div class="flex author-profile">
+                                    <img src="images/add-target-form/Avatar_1.png" alt="">
+                                </div>
+                                <div class="author-name">
+                                    Mitchell Robertson
+                                </div>
+                                <div class="author-comment">
+                                    Officia officia duis nostrud dolor est laborum non ea eu minim incididunt. Magna
+                                    fugiat deserunt aliquip consectetur elit non.
+                                </div>
+                            </section>
+                            <textarea name="" id="" cols="30" rows="10" class="comment-box"
+                                placeholder="Comments"></textarea>
+                        </article>
+
                     </div>
 
 
                 </div>
-            </div>
+            </article>
+
+            <div class="rectangle add-target-form__rectangle"></div>
+
+            <article class="flex add-target-form__footer">
+                <button class="rect-btn french-rose--btn">
+                    <span class="value">
+                        save
+                    </span>
+                </button>
+
+                <button class="rect-btn default--btn">
+                    <span class="value">
+                        cancel
+                    </span>
+                </button>
+
+                <button class="flex rect-btn secondary-btn">
+                    <span class="value">
+                        Copy information to CLONE form
+                    </span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="0" width="15"
+                            height="18">
+                            <path
+                                d="M12.75 0.75H3.75C2.925 0.75 2.25 1.425 2.25 2.25V12.75H3.75V2.25H12.75V0.75ZM15 3.75H6.75C5.925 3.75 5.25 4.425 5.25 5.25V15.75C5.25 16.575 5.925 17.25 6.75 17.25H15C15.825 17.25 16.5 16.575 16.5 15.75V5.25C16.5 4.425 15.825 3.75 15 3.75ZM15 15.75H6.75V5.25H15V15.75Z"
+                                fill="black" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <rect width="18" height="18" fill="#EC407A" />
+                        </g>
+                    </svg>
+
+
+                </button>
+            </article>
         </div>
-    </div>
+    </main>
+
 </body>
 
 </html>

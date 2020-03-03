@@ -346,7 +346,6 @@ template {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 *::after {
@@ -2253,7 +2252,7 @@ svg {
   background: #EC407A;
   text-align: center;
   margin-top: 23%;
-  margin-left: 74%;
+  margin-left: 73%;
 }
 
 .tracer-ligand__mainbody .addicon img {
@@ -2288,7 +2287,6 @@ svg {
 .details-card .details__heading .card-btn--top .value {
   margin: 0;
   margin-left: 8px;
-  width: 172px;
 }
 
 .details-card .details__heading .details__checkbox {
@@ -3403,7 +3401,6 @@ svg {
 
 .add-target__menu-card .menu-card__content {
   margin-left: 24px;
-  width: 260px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3427,7 +3424,6 @@ svg {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 16px;
   width: 18px;
   height: 18px;
   background: url(../../images/add-target-form/arrow_drop_down_3.png) no-repeat;
@@ -3453,6 +3449,7 @@ svg {
 
 .add-target__menu-card--active .menu-card__content .menu-card__content-image {
   background: url(../../images/add-target-form/ic_arrow_drop_down_24px.png) no-repeat;
+  background-position: 4px 4px;
 }
 
 .add-target__menu-card--active .menu-card__content h3 {
@@ -3470,7 +3467,6 @@ svg {
   margin-top: 24px;
   margin-left: 24px;
   width: 12px;
-  height: auto;
 }
 
 .add-target-menu-card-active__content .menu-card-active-content__value {
@@ -3503,12 +3499,11 @@ svg {
 }
 
 .add-target-right__body {
-  margin-top: 20px;
-  margin-left: 30px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
 .add-target__menu-form .form-btn {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -3518,16 +3513,12 @@ svg {
 }
 
 .add-target__menu-form .label {
-  margin: 17px 31px;
+  margin: 16px 30px;
 }
 
 .add-target__menu-form .form--active {
   color: #E91E62;
   border-bottom: 2px solid #E91E62;
-}
-
-.add-target-right__body {
-  width: 850px;
 }
 
 .add-target-right__body .rectangle {
@@ -3541,14 +3532,14 @@ svg {
 
 .add-target-right__body .yellow-rectangle {
   position: absolute;
-  width: 203.33px;
+  width: 204px;
   background: #F7B500;
   margin-left: 14px;
 }
 
 .add-target-right__body .electric-rectangle {
   position: absolute;
-  width: 418.76px;
+  width: 418px;
   background: #6236FF;
   margin-left: 250px;
 }
@@ -3576,11 +3567,8 @@ svg {
 .add-target-right__body .rect-btn {
   margin-left: 10px;
   margin-top: 20px;
-}
-
-.add-target-right__body .rect-btn .value {
-  margin-left: 20px;
-  margin-right: 20px;
+  border-radius: 2px;
+  padding: 10px 0;
 }
 
 .add-target-right__body .selective-yellow--btn {
@@ -3621,7 +3609,11 @@ svg {
 
 .add-target__form {
   border-right: 1px solid #EFF2F7;
-  width: 370px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
   margin-top: 30px;
 }
 
@@ -3630,11 +3622,19 @@ svg {
 }
 
 .add-target__form .add-target__form--width-s {
-  width: 165px;
+  width: 164px;
 }
 
 .add-target__form .form__components {
-  margin-top: 40px;
+  margin-top: 24px;
+}
+
+.add-target__form .mt-32 {
+  margin-top: 32px;
+}
+
+.add-target__form .mt-42 {
+  margin-top: 42px;
 }
 
 .add-target__form .label {
@@ -3657,7 +3657,7 @@ svg {
 }
 
 .add-target__form .form-rectangle {
-  margin-top: 16px;
+  margin-top: 12px;
   height: 1px;
   background: #9E9E9E;
   border-radius: 14px;
@@ -3682,6 +3682,8 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .add-target__form .add-target-form__btns .image {
@@ -3711,6 +3713,7 @@ svg {
 
 .add-target__form .add-target-form__checkboxes {
   margin-top: 24px;
+  margin-right: 32px;
 }
 
 .add-target__form .horizontal__rect {
@@ -3726,42 +3729,194 @@ svg {
 
 .add-target-form__details {
   width: 480px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.add-target-form__details .structural-biological-image {
-  width: 438px;
-  height: 434px;
-  margin-left: 50px;
-  background: url(../../images/add-target-form/Bitmap.png);
-  background-repeat: no-repeat;
+.add-target-form__details .structural-biological-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -46px;
+  margin-left: 72px;
 }
 
 .add-target-form__details .killarney--btn {
-  height: 36px;
-  margin-top: 0px;
-  margin-left: 296px;
+  margin-top: 0;
+  margin-left: 292px;
+  padding: 8px 0px;
 }
 
-.add-target-form__details .indicator {
-  margin-left: 20px;
-}
-
-.add-target-form__details .unknown-data {
-  width: 473px;
-  height: 300px;
+.add-target-form__details .marked-data {
   margin-top: 20px;
-  background: url(../../images/add-target-form/Bitmap1.png);
-  background-repeat: no-repeat;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.add-target-form__details .marked-data img {
+  margin-left: 10px;
 }
 
 .add-target-form__details .add-target-form__indicator {
+  margin-left: 20px;
   margin-top: 10px;
-  height: 14px;
+  margin-right: 16px;
 }
 
 .add-target-form__details .rectangle {
   width: 447px;
   height: 1px;
+  position: unset;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.add-target-form__details .add-target-form__position-annotation {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.add-target-form__details .add-target-form__position .label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+}
+
+.add-target-form__details .add-target-form__buttons {
+  margin-top: 6px;
+}
+
+.add-target-form__details .add-target-form__buttons .add-target-form__btns {
+  padding: 4px 6px;
+}
+
+.add-target-form__details .bg--pureto-rico {
+  background: #4BC4C2;
+}
+
+.add-target-form__details .bg--royal-health {
+  background: #A3296E;
+  margin-top: 12px;
+}
+
+.add-target-form__details .add-target-form__annotation {
+  margin-left: 70px;
+}
+
+.add-target-form__details .add-target-form__annotation .label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+}
+
+.add-target-form__details .add-target-form__annotation .add-target-form__annotation-labels {
+  font-size: 17px;
+  line-height: 206%;
+}
+
+.add-target-form__details .add-target-form__comments {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.add-target-form__details .add-target-form__comments .comment {
+  margin-top: 16px;
+}
+
+.add-target-form__details .add-target-form__comments .author-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 8px;
+}
+
+.add-target-form__details .add-target-form__comments .author-comment {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 36px;
+  margin-right: 24px;
+  color: #212121;
+}
+
+.add-target-form__details .add-target-form__comments .comment-box {
+  width: 447px;
+  height: 80px;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+}
+
+.add-target-form__details .add-target-form__comments ::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #616161;
+  opacity: 0.45;
+}
+
+.add-target-form__details .add-target-form__comments :-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #616161;
+  opacity: 0.45;
+}
+
+.add-target-form__details .add-target-form__comments ::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #616161;
+  opacity: 0.45;
+}
+
+.add-target-form__details .add-target-form__comments ::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #616161;
+  opacity: 0.45;
+}
+
+.add-target-form__rectangle {
+  width: 831px;
+  margin-left: 28px;
+  margin-top: 30px;
+  background: #E0E0E0;
+}
+
+.add-target-form__footer .rect-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  border: none;
+}
+
+.add-target-form__footer .secondary-btn {
+  margin-left: 296px;
+  background: #FCE4EC;
+  border-radius: 4px;
+  padding: 0 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.add-target-form__footer .secondary-btn .value {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  color: #E91E62;
 }
 
 .protein-request {
