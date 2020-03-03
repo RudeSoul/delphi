@@ -10,6 +10,7 @@
     .menu-card__content {
         margin-left: 24px;
         // width: 260px;
+
         justify-content: space-between;
 
         h3 {
@@ -30,7 +31,7 @@
 
         .menu-card__content-image {
             align-self: center;
-
+            cursor: pointer;
             width: 18px;
             height: 18px;
             background: url(../../images/add-target-form/arrow_drop_down_3.png) no-repeat;

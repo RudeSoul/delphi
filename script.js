@@ -13,3 +13,8 @@ function dropDownFunc() {
     z.style.marginTop = "16px";
   }
 }
+
+function addTargetDropDown() {
+  let a = document.getElementById("menuCard");
+  a.classList.toggle("add-target__menu-card--active");
+}

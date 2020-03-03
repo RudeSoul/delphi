@@ -11,6 +11,7 @@
     <!--build:css css/style.css-->
     <link rel="stylesheet" href="dist/css/style.css">
     <!--endbuild-->
+    <script src="script.js" defer></script>
 
 </head>
 
@@ -23,7 +24,8 @@
             </div>
 
             <div class="add-target-left__body">
-                <div class="add-target__menu-card add-target__menu-card--active ">
+                <div class="add-target__menu-card add-target__menu-card--active " id="menuCard"
+                    onclick="addTargetDropDown()">
                     <div class="flex menu-card__content">
                         <h3>Avi-NTRK1(1-796;L93P,A110D)...</h3>
                         <div class="menu-card__content-image">
@@ -57,7 +59,7 @@
                     </div>
 
                 </div>
-                <div class="add-target__menu-card">
+                <div class="add-target__menu-card" id="menuCard" onclick="addTargetDropDown()">
                     <div class="flex menu-card__content">
                         <h3>Avi-NTRK2</h3>
                         <div class="menu-card__content-image">

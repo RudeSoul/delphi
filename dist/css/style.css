@@ -369,6 +369,7 @@ li {
 a {
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 p {
@@ -425,6 +426,15 @@ img {
 }
 
 svg {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   cursor: pointer;
 }
 
@@ -3424,6 +3434,7 @@ svg {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
   width: 18px;
   height: 18px;
   background: url(../../images/add-target-form/arrow_drop_down_3.png) no-repeat;
