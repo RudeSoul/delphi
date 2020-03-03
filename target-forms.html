@@ -218,7 +218,7 @@
             </div>
             <div class="flex card target-form__card">
 
-                <section class="left-card">
+                <article class="left-card">
                     <div class="flex form-card__heading">
                         <h2>Target Forms</h2>
                         <div class="flex add-arrange-form">
@@ -231,7 +231,8 @@
 
 
 
-                    <div class="flex left-card__menu menu-items menu-items--active">
+                    <section class="flex left-card__menu menu-items menu-items--active" id="targetFormMenuItems"
+                        onclick="targetFormMenuItems()">
                         <div class="info-icon info-icon--active">
 
                         </div>
@@ -250,32 +251,47 @@
                             </div>
                             <div class="active-arrow-value">ELONB (1-112)</div>
                         </div>
-                    </div>
-                    <div class="flex left-card__menu menu-items">
+                    </section>
+                    <section class="flex left-card__menu menu-items " id="targetFormMenuItemsSecond"
+                        onclick="targetFormMenuItemsSecond()">
+                        <div class="info-icon info-icon--active ">
+
+                        </div>
+                        <h3>Avi-NTRK1(1-89/116-796)</h3>
+                        <div class="arrow-icon arrow-icon--active"> </div>
+
+                        <div class="menu-details menu-details--first">
+                            <div class="active-arrow-icon">
+                                <img src="images/target-form/arrow_forward.png" alt="forward">
+                            </div>
+                            <div class="active-arrow-value">ELONB (1-112)</div>
+                        </div>
+
+                        <div class=" menu-details menu-details--last">
+                            <div class="active-arrow-icon">
+                                <img src="images/target-form/arrow_forward.png" alt="forward">
+                            </div>
+                            <div class="active-arrow-value">ELONB (1-112)</div>
+                        </div>
+                    </section>
+                    <section class="flex left-card__menu menu-items">
                         <div class="info-icon">
 
                         </div>
                         <h3>Avi-NTRK1(1-89/116-796)</h3>
                         <div class="arrow-icon"> </div>
-                    </div>
-                    <div class="flex left-card__menu menu-items">
+                    </section>
+                    <section class="flex left-card__menu menu-items">
                         <div class="info-icon">
 
                         </div>
                         <h3>Avi-NTRK1(1-89/116-796)</h3>
                         <div class="arrow-icon"> </div>
-                    </div>
-                    <div class="flex left-card__menu menu-items">
-                        <div class="info-icon">
-
-                        </div>
-                        <h3>Avi-NTRK1(1-89/116-796)</h3>
-                        <div class="arrow-icon"> </div>
-                    </div>
+                    </section>
 
 
 
-                </section>
+                </article>
                 <section class="right-card">
 
                     <div class="review-card-right">
@@ -315,18 +331,18 @@
                     <section class="flex review-form__short-overview">
                         <div class="flex overview-heading">
                             <h2>Needed By Groups</h2>
-                            <div class="flex btn-rounded overview-heading-btn">
+                            <button class="flex btn-rounded overview-heading-btn">
                                 <span>DEL Screening</span>
                                 <span class="image">
                                     <img src="images/target-form//ic_close_24px.png" alt="close">
                                 </span>
-                            </div>
-                            <div class="flex btn-rounded overview-heading-btn overview-heading-btn--ml">
+                            </button>
+                            <button class="flex btn-rounded overview-heading-btn overview-heading-btn--ml">
                                 <span>SPR</span>
                                 <span class="image">
                                     <img src="images/target-form//ic_close_24px.png" alt="close">
                                 </span>
-                            </div>
+                            </button>
                         </div>
                         <div class="rectangle"></div>
 
@@ -336,12 +352,12 @@
                     <section class="flex review-form__short-overview review-form__short-overview--tags">
                         <div class="overview-heading">
                             <h2>Tags</h2>
-                            <div class="inline-block btn-rounded overview-heading-btn">
+                            <button class="inline-block btn-rounded overview-heading-btn">
                                 <span>Entrectinib</span>
                                 <span class="image">
                                     <img src="images/main-body/ic_close_24px.png" alt="close">
                                 </span>
-                            </div>
+                            </button>
                             <div class="inline-block addicon">
                                 <img src="images/target-form/ic_add_circle_24pxB.png" alt="add">
                             </div>
@@ -467,11 +483,11 @@
                                     Compare
                                 </span>
                             </button>
-                            <button class="rect-btn blue-ribbion--btn">
-                                <span class="value">
-                                    Request this Protein
-                                </span>
-                            </button>
+                            <a href="protein-request.html"> <button class="rect-btn blue-ribbion--btn">
+                                    <span class="value">
+                                        Request this Protein
+                                    </span>
+                                </button> </a>
 
                         </div>
 

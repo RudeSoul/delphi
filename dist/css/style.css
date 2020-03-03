@@ -1082,7 +1082,7 @@ button {
 }
 
 .card__ntrk1 {
-  margin-top: 44px;
+  margin-top: 32px;
 }
 
 .ic-lunch__ntrk1 {
@@ -1282,7 +1282,7 @@ button {
 
 .structural-biology {
   width: 480px;
-  margin-top: 43px;
+  margin-top: 32px;
   margin-left: 13px;
   background-image: url(../../images/main-body/Bitmap.png);
   background-size: auto;
@@ -2731,13 +2731,6 @@ button {
   background-position: center;
 }
 
-.target-form__card .left-card .menu-items .info-icon--active {
-  background: url(../../images/target-form/ic_info_24pxA.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .target-form__card .left-card .menu-items .arrow-icon {
   height: 10px;
   width: 10px;
@@ -2750,14 +2743,12 @@ button {
       align-self: center;
 }
 
-.target-form__card .left-card .menu-items .arrow-icon--active {
-  background: url(../../images/target-form/ic_arrow_drop_down_24pxA.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.target-form__card .left-card .menu-items .menu-details--first {
+  display: none;
+}
+
+.target-form__card .left-card .menu-items .menu-details--last {
+  display: none;
 }
 
 .target-form__card .left-card .menu-items--active {
@@ -2768,25 +2759,50 @@ button {
   color: #EC407A;
 }
 
-.target-form__card .left-card .menu-details {
+.target-form__card .left-card .menu-items--active .menu-details--first {
+  display: block;
+}
+
+.target-form__card .left-card .menu-items--active .menu-details--last {
+  display: block;
+}
+
+.target-form__card .left-card .menu-items--active .info-icon--active {
+  background: url(../../images/target-form/ic_info_24pxA.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.target-form__card .left-card .menu-items--active .arrow-icon--active {
+  background: url(../../images/target-form/ic_arrow_drop_down_24pxA.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.target-form__card .left-card .menu-items--active .menu-details {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 4px;
   width: 100%;
 }
 
-.target-form__card .left-card .menu-details .active-arrow-icon {
+.target-form__card .left-card .menu-items--active .menu-details .active-arrow-icon {
   float: left;
   width: 24px;
   height: 24px;
 }
 
-.target-form__card .left-card .menu-details .active-arrow-icon img {
+.target-form__card .left-card .menu-items--active .menu-details .active-arrow-icon img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.target-form__card .left-card .menu-details .active-arrow-value {
+.target-form__card .left-card .menu-items--active .menu-details .active-arrow-value {
   float: left;
   margin-left: 12px;
   font-style: normal;
@@ -2797,11 +2813,11 @@ button {
   color: #000000;
 }
 
-.target-form__card .left-card .menu-details--first {
+.target-form__card .left-card .menu-items--active .menu-details--first {
   margin-top: 20px;
 }
 
-.target-form__card .left-card .menu-details--last {
+.target-form__card .left-card .menu-items--active .menu-details--last {
   margin-bottom: 6px;
 }
 
@@ -3299,6 +3315,11 @@ button {
 
 .add-notification {
   margin-left: 744px;
+  background: transparent;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .add-module {

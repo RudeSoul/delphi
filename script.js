@@ -18,3 +18,13 @@ function addTargetDropDown() {
   let a = document.getElementById("menuCard");
   a.classList.toggle("add-target__menu-card--active");
 }
+
+function targetFormMenuItems() {
+  let b = document.getElementById("targetFormMenuItems");
+  b.classList.toggle("menu-items--active");
+}
+
+function targetFormMenuItemsSecond() {
+  let c = document.getElementById("targetFormMenuItemsSecond");
+  c.classList.toggle("menu-items--active");
+}
