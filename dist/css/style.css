@@ -3526,6 +3526,7 @@ button {
   letter-spacing: 1.25px;
   text-transform: uppercase;
   color: #616161;
+  cursor: pointer;
 }
 
 .add-target__menu-form .label {
