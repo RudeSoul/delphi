@@ -34,6 +34,7 @@
     margin-right: 16px;
 
 
+
     @include e(frame) {
         flex-direction: column;
         padding: 0;
@@ -47,6 +48,7 @@
 
         letter-spacing: 0.15px;
         margin-top: 0px;
+        cursor: pointer;
 
     }
 
@@ -54,6 +56,7 @@
         font-size: 14px;
         line-height: 29px;
         color: $primary-color;
+        cursor: pointer;
 
 
         letter-spacing: 0.1px;
@@ -170,7 +173,7 @@
         letter-spacing: 0.4px;
 
         color: rgba($white, 0.87);
-        margin: 4px 0px 4px 8px;
+        margin: 0px 0px 0px 8px;
     }
 
     .image {
@@ -368,4 +371,25 @@
     }
 
 
+}
+
+
+
+.dropdown-options {
+    width: 100%;
+    display: none;
+    background: inherit;
+    margin-bottom: 12px;
+
+
+
+    li {
+        display: block;
+        margin-bottom: 5px;
+        list-style: square;
+
+        a {
+            color: rgba($white, 0.87)
+        }
+    }
 }

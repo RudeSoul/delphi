@@ -8,18 +8,18 @@
 
 
 .header-menu {
-  align-content: center;
+  align-items: center;
   margin: 14px auto;
   margin-left: 16px;
 }
 
 .burger-menu {
   margin-left: 3px;
-  width: 18px;
-  height: 12px;
-  overflow: hidden;
+  // width: 18px;
+  // height: 12px;
+  // overflow: hidden;
 
-  align-self: center;
+  // align-self: center;
 
   img {
     object-fit: cover;
@@ -36,10 +36,11 @@
   height: 20px;
   width: 20px;
   overflow: hidden;
+  // opacity: 0.4;
 
   img {
     object-fit: cover;
-    opacity: 0.3;
+    opacity: 0.4;
 
   }
 }

@@ -39,12 +39,13 @@
 
 .structural-btn {
     margin-top: 17px;
+    flex-direction: column;
 }
 
 .btn__structural {
     width: 59px;
     padding-left: 8px;
-    padding-right: 6px;
+    padding-right: 4px;
     margin-bottom: 4px;
 
     h3 {
