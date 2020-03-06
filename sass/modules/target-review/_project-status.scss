@@ -28,6 +28,7 @@
             letter-spacing: 0.25px;
 
             color: $short-overview__body-placeholder--text-color;
+
         }
 
         @include e(icon) {
@@ -35,7 +36,16 @@
             width: 16px;
             height: 16px;
             margin-top: 24px;
-            margin-left: 113.77px;
+            margin-left: 114px;
+
+            @include hover {
+
+                transform: rotate(-90deg);
+                margin-bottom: 60px;
+                margin-top: 24px;
+                margin-left: 110px;
+
+            }
         }
 
         .border-bottom {

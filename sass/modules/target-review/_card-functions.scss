@@ -1,28 +1,30 @@
 .card__function {
     margin-top: 20px;
-    padding-top: 12px;
-    padding-left: 16px;
+    padding-top: 10px;
+    padding-left: 12px;
+    // margin-right: 20px;
 
 
     h2 {
-        margin-bottom: 12px;
-
-
+        margin-bottom: 10px;
         font-style: normal;
         font-weight: normal;
         font-size: 17px;
         line-height: 20px;
-        /* identical to box height */
 
 
         color: $text-color--black;
 
     }
 
-    p {
+    .card__function-content {
+        margin-right: 6px;
         height: 148px;
         overflow: scroll;
-        margin-right: 34.36px;
+    }
+
+    p {
+        margin-right: 20px;
         text-align: justify;
         font-style: normal;
         font-weight: normal;

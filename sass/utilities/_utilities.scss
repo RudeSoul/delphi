@@ -25,7 +25,7 @@
     &:hover,
     &:active,
     &:focus {
-        @extend %hover;
+        // @extend %hover;
         @content;
     }
 }

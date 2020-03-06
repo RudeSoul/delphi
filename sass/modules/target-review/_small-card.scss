@@ -69,15 +69,18 @@
             margin-top: 20px;
 
             .profile__name {
+                cursor: pointer;
                 flex-direction: column;
 
                 a {
+                    cursor: pointer;
 
                     color: $text-color--black;
                     line-height: 20px;
                 }
 
                 .position {
+                    cursor: pointer;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 12px;

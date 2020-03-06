@@ -1,10 +1,12 @@
 .card__GeneRIFs {
     margin-top: 20px;
-    padding-top: 12px;
+    padding-top: 10px;
+    padding-left: 12px;
 }
 
 
 .GeneRIFs__header {
+    margin-bottom: 10px;
 
     .header-left {
         width: 73px;
@@ -12,7 +14,7 @@
         h2 {
             font-style: normal;
             font-weight: normal;
-            font-size: 17px;
+            font-size: 16px;
             line-height: 20px;
 
 
@@ -51,4 +53,6 @@
 .GeneRIFs__all-content {
     height: 255px;
     overflow: scroll;
+    margin-right: 6px;
+
 }

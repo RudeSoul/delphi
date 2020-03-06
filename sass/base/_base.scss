@@ -72,6 +72,7 @@ span {
 ::-webkit-scrollbar-thumb {
     background: $silver;
     border-radius: 18px;
+    margin-right: 6px;
 }
 
 /* Handle on hover */
@@ -97,5 +98,9 @@ h6 {
 }
 
 button {
+    cursor: pointer;
+}
+
+i {
     cursor: pointer;
 }

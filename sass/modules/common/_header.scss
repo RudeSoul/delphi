@@ -15,15 +15,6 @@
 
 .burger-menu {
   margin-left: 3px;
-  // width: 18px;
-  // height: 12px;
-  // overflow: hidden;
-
-  // align-self: center;
-
-  img {
-    object-fit: cover;
-  }
 }
 
 .dash {
@@ -33,22 +24,12 @@
 .home-icon {
   margin-left: 16px;
 
-  height: 20px;
-  width: 20px;
-  overflow: hidden;
-  // opacity: 0.4;
+  opacity: 0.4;
 
-  img {
-    object-fit: cover;
-    opacity: 0.4;
-
-  }
 }
 
 .company-name {
   margin-left: 8px;
-  margin-top: 6px;
-  margin-bottom: 3px;
 
   a {
     font-family: $font-family--default;

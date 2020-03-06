@@ -1,19 +1,19 @@
 .card__go-biological {
     margin-top: 20px;
     padding-top: 0px;
+    padding-left: 0;
 
     .leftbar {
         width: 262px;
-        padding-bottom: 60px;
         background: $alabaster;
         border-radius: 3px 0px 3px 3px;
 
 
         .leftbar-heading {
 
-            padding-bottom: 12px;
+            margin-bottom: 10px;
             padding-left: 24px;
-            padding-top: 12px;
+            margin-top: 20px;
 
 
             h3 {
@@ -28,6 +28,8 @@
         }
 
         .leftbar-list {
+            align-items: center;
+
             background: $alabaster;
             box-shadow: 0px 1px 0px rgba($text-color--black, 0.14), 0px -1px 0px $alto;
         }
@@ -35,9 +37,21 @@
         .leftbar-list--active {
             background: $primary-color;
 
+            .title--active {
+                color: $french-rose;
+                font-weight: bold;
+
+            }
+
+            .image {
+                display: block;
+            }
+
         }
 
+
         .title {
+            cursor: pointer;
             width: 196px;
             margin-top: 14px;
             margin-bottom: 14px;
@@ -54,19 +68,14 @@
 
         }
 
-        .title1 {
-            color: $french-rose;
-            font-weight: bold;
 
-        }
 
         .image {
-            margin-top: 12px;
+            cursor: pointer;
+            display: none;
             width: 24px;
             height: 24px;
-            background: url(../../images/main-body/ic_arrow_drop_down_24pxSIDE.png);
-            background-position: center;
-            background-repeat: no-repeat;
+            margin-left: 12px;
         }
     }
 
@@ -75,9 +84,8 @@
         background: $primary-color;
         box-shadow: -1px 0px 0px $mercury;
         border-radius: 0px 3px 3px 0px;
-        padding-top: 30px;
+        padding-top: 28px;
         padding-left: 30px;
-
 
     }
 }

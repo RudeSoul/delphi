@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="#" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6305c93d80.js" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <title>Delphi</title>
     <!--build:css css/style.css-->
@@ -223,8 +225,11 @@
                         <h2>Target Forms</h2>
                         <div class="flex add-arrange-form">
                             <img src="images/target-form/filter_list.png" class="filter" alt="">
-                            <a href="add-target-form.html"> <img src="images/target-form/ic_add_circle_24px.png"
-                                    class="add" alt=""></a>
+
+                            <a href="add-target-form.html">
+
+                                <i class="fas fa-plus-circle color add color--oslo-gray"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -233,11 +238,13 @@
 
                     <section class="flex left-card__menu menu-items menu-items--active" id="targetFormMenuItems"
                         onclick="targetFormMenuItems()">
-                        <div class="info-icon info-icon--active">
-
+                        <div class="info-icon color--oslo-gray info-icon--active ">
+                            <i class="fas fa-info-circle"></i>
                         </div>
                         <h3>Avi-NTRK1(1-89/116-796)</h3>
-                        <div class="arrow-icon arrow-icon--active"> </div>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+                        </div>
                         <div class="menu-details menu-details--first">
                             <div class="active-arrow-icon">
                                 <img src="images/target-form/arrow_forward.png" alt="forward">
@@ -254,11 +261,14 @@
                     </section>
                     <section class="flex left-card__menu menu-items " id="targetFormMenuItemsSecond"
                         onclick="targetFormMenuItemsSecond()">
-                        <div class="info-icon info-icon--active ">
-
+                        <div class="info-icon color--oslo-gray info-icon--active">
+                            <i class="fas fa-info-circle"></i>
                         </div>
                         <h3>Avi-NTRK1(1-89/116-796)</h3>
-                        <div class="arrow-icon arrow-icon--active"> </div>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+
+                        </div>
 
                         <div class="menu-details menu-details--first">
                             <div class="active-arrow-icon">
@@ -275,18 +285,24 @@
                         </div>
                     </section>
                     <section class="flex left-card__menu menu-items">
-                        <div class="info-icon">
-
+                        <div class="info-icon color--oslo-gray">
+                            <i class="fas fa-info-circle"></i>
                         </div>
                         <h3>Avi-NTRK1(1-89/116-796)</h3>
-                        <div class="arrow-icon"> </div>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+
+                        </div>
                     </section>
                     <section class="flex left-card__menu menu-items">
-                        <div class="info-icon">
-
+                        <div class="info-icon color--oslo-gray">
+                            <i class="fas fa-info-circle"></i>
                         </div>
                         <h3>Avi-NTRK1(1-89/116-796)</h3>
-                        <div class="arrow-icon"> </div>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+
+                        </div>
                     </section>
 
 
@@ -331,18 +347,22 @@
                     <section class="flex review-form__short-overview">
                         <div class="flex overview-heading">
                             <h2>Needed By Groups</h2>
-                            <button class="flex btn-rounded overview-heading-btn">
+                            <div class="btn-rounded overview-heading-btn">
                                 <span>DEL Screening</span>
-                                <span class="image">
-                                    <img src="images/target-form//ic_close_24px.png" alt="close">
-                                </span>
-                            </button>
-                            <button class="flex btn-rounded overview-heading-btn overview-heading-btn--ml">
+                                <button class="image">
+
+                                    <i class="fas fa-times size--m"></i>
+                                </button>
+                            </div>
+
+
+                            <div class="btn-rounded overview-heading-btn overview-heading-btn--ml">
                                 <span>SPR</span>
-                                <span class="image">
-                                    <img src="images/target-form//ic_close_24px.png" alt="close">
-                                </span>
-                            </button>
+                                <button class="image">
+
+                                    <i class="fas fa-times size--m"></i>
+                                </button>
+                            </div>
                         </div>
                         <div class="rectangle"></div>
 
@@ -352,14 +372,17 @@
                     <section class="flex review-form__short-overview review-form__short-overview--tags">
                         <div class="overview-heading">
                             <h2>Tags</h2>
-                            <button class="inline-block btn-rounded overview-heading-btn">
+                            <div class="inline-block btn-rounded overview-heading-btn">
                                 <span>Entrectinib</span>
-                                <span class="image">
-                                    <img src="images/main-body/ic_close_24px.png" alt="close">
-                                </span>
-                            </button>
+                                <button class="image">
+
+                                    <i class="fas fa-times color--white size--m"></i>
+                                </button>
+                            </div>
                             <div class="inline-block addicon">
-                                <img src="images/target-form/ic_add_circle_24pxB.png" alt="add">
+                                <!-- <img src="images/target-form/ic_add_circle_24pxB.png" alt="add"> -->
+                                <i class="fas fa-plus-circle color--blue-ribbion add "></i>
+
                             </div>
                         </div>
                         <div class="rectangle"></div>

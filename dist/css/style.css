@@ -414,6 +414,7 @@ span {
 ::-webkit-scrollbar-thumb {
   background: #BDBDBD;
   border-radius: 18px;
+  margin-right: 6px;
 }
 
 /* Handle on hover */
@@ -439,6 +440,10 @@ h6 {
 }
 
 button {
+  cursor: pointer;
+}
+
+i {
   cursor: pointer;
 }
 
@@ -478,6 +483,10 @@ button {
 
 .ml-0 {
   margin-left: 0px;
+}
+
+.mt-16 {
+  margin-top: 16px;
 }
 
 .dropdown-options {
@@ -609,13 +618,13 @@ button {
 }
 
 .card--s {
-  width: 199px;
+  width: 200px;
   padding-top: 20px;
   padding-left: 20px;
 }
 
 .card--m {
-  width: 379px;
+  width: 380px;
 }
 
 .card--l {
@@ -686,22 +695,28 @@ button {
 }
 
 .btn-rounded {
-  background: black;
+  background: rgba(0, 0, 0, 0);
   border: 1px solid #EFF2F7;
-  border-radius: 11.5px;
+  border-radius: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .btn-rounded span {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.4px;
-  color: rgba(255, 255, 255, 0.87);
-  margin: 0px 0px 0px 8px;
 }
 
 .btn-rounded .image {
+  border: none;
+  background: transparent;
   margin: 0;
-  margin-right: 8px;
 }
 
 .btn-rounded--disable {
@@ -712,6 +727,7 @@ button {
   height: 12px;
   width: 12px;
   border-radius: 45px;
+  cursor: pointer;
 }
 
 .circular-indicator--violet {
@@ -743,12 +759,12 @@ button {
 }
 
 .checkbox__content {
-  margin-top: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
 .checkbox__content .input {
+  cursor: pointer;
   width: 20px;
   height: 20px;
   background-image: url(../../images/main-body/ic_check_box_outline_blank_24px.png);
@@ -801,6 +817,8 @@ button {
   text-align: center;
   letter-spacing: 0.214286px;
   text-transform: uppercase;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #ffffff;
 }
 
@@ -889,32 +907,17 @@ button {
   margin-left: 3px;
 }
 
-.burger-menu img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .dash {
   margin-left: 19px;
 }
 
 .home-icon {
   margin-left: 16px;
-  height: 20px;
-  width: 20px;
-  overflow: hidden;
-}
-
-.home-icon img {
-  -o-object-fit: cover;
-     object-fit: cover;
   opacity: 0.4;
 }
 
 .company-name {
   margin-left: 8px;
-  margin-top: 6px;
-  margin-bottom: 3px;
 }
 
 .company-name a {
@@ -926,9 +929,48 @@ button {
   color: #ffffff;
 }
 
+.color--white {
+  color: #ffffff;
+}
+
+.color--oslo-gray {
+  color: #80858B;
+}
+
+.fa-sort-down__color--oslo-gray {
+  color: #80858B;
+}
+
+.color--blue-ribbion {
+  color: #304FFE;
+}
+
+.size--s {
+  height: 8px;
+  width: 8px;
+  font-size: 10px;
+}
+
+.size--m {
+  font-size: 12px;
+}
+
+.rotate-90 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.border-color--blue {
+  border: 1px solid #304FFE !important;
+}
+
+.visibility--none {
+  visibility: hidden;
+}
+
 .target-review {
-  width: 1129px;
-  margin: 0 auto;
+  min-width: 1129px;
+  width: 100%;
   background-color: #E5E5E5;
 }
 
@@ -1016,8 +1058,7 @@ button {
 
 .target-review__main-body {
   width: 909px;
-  float: right;
-  padding-left: 30px;
+  padding-left: 28px;
 }
 
 .plan-header {
@@ -1072,7 +1113,15 @@ button {
   width: 16px;
   height: 16px;
   margin-top: 24px;
-  margin-left: 113.77px;
+  margin-left: 114px;
+}
+
+.project-status .short-overview__icon:hover, .project-status .short-overview__icon:active, .project-status .short-overview__icon:focus {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-bottom: 60px;
+  margin-top: 24px;
+  margin-left: 110px;
 }
 
 .project-status .short-overview .border-bottom {
@@ -1200,7 +1249,7 @@ button {
   height: 16px;
   width: 16px;
   margin-top: 25px;
-  margin-left: 217.66px;
+  margin-left: 218px;
 }
 
 .therapeutic-area .short-overview .border-bottom {
@@ -1271,7 +1320,15 @@ button {
   height: 16px;
   width: 16px;
   margin-top: 25px;
-  margin-left: 217.66px;
+  margin-left: 218px;
+}
+
+.target-category .short-overview__icon:hover, .target-category .short-overview__icon:active, .target-category .short-overview__icon:focus {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-bottom: 60px;
+  margin-top: 25px;
+  margin-left: 214px;
 }
 
 .target-category .short-overview .border-bottom {
@@ -1283,7 +1340,7 @@ button {
 .structural-biology {
   width: 480px;
   margin-top: 32px;
-  margin-left: 13px;
+  margin-left: 12px;
   background-image: url(../../images/main-body/Bitmap.png);
   background-size: auto;
   background-repeat: no-repeat;
@@ -1292,11 +1349,13 @@ button {
 
 .structural-biology__top-content {
   margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .structural-biology h2 {
   margin-top: 20px;
-  display: inline-block;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -1305,25 +1364,12 @@ button {
 }
 
 .structural-biology .fullscreen {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-top: 16px;
-  margin-left: 244px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-left: 270px;
 }
 
 .structural-biology .more {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: 24px;
-  margin-right: 16px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-left: 10px;
   margin-top: 12px;
 }
 
@@ -1399,55 +1445,50 @@ button {
 .card__pubmed .rectangle {
   margin-top: 12px;
   width: 379px;
+  opacity: 0.3;
 }
 
 .pubmed__header {
-  margin-left: 20px;
   margin-top: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
 }
 
 .pubmed__header h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  margin-left: 20px;
   letter-spacing: 0.15px;
   color: #000000;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
 }
 
-.pubmed__header img {
+.pubmed__header .search-icon {
   height: 24px;
   width: 24px;
-  margin-right: 20px;
-  margin-top: -4px;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  margin-left: 164px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .card__pubmed {
-  padding-bottom: 126px;
+  padding-bottom: 24px;
 }
 
 .pubmed__all-content {
-  height: 255px;
+  width: 376px;
+  height: 402px;
   overflow: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .pubmed__content {
   padding-left: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .pubmed__content img {
@@ -1458,9 +1499,11 @@ button {
 
 .pubmed__content p {
   margin-top: 16px;
+  margin-left: 12px;
   width: 300px;
   font-size: 14px;
   line-height: 17px;
+  word-break: all;
   letter-spacing: 0.25px;
   color: #304FFE;
 }
@@ -1469,20 +1512,20 @@ button {
   margin-top: 20px;
   margin-left: 12px;
   padding: 0;
-  padding-bottom: 54px;
 }
 
 .card__documents .rectangle {
-  margin-top: 12px;
+  margin-top: 13px;
   width: 480px;
+  opacity: 0.3;
 }
 
 .documents__header {
   margin-top: 20px;
-  margin-left: 20px;
 }
 
 .documents__header h2 {
+  margin-left: 20px;
   float: left;
   font-style: normal;
   font-weight: 500;
@@ -1534,10 +1577,11 @@ button {
 }
 
 .documents__all-content {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 14px;
+  margin-right: 6px;
   padding-top: 12px;
-  height: 375px;
+  height: 402px;
   overflow: scroll;
 }
 
@@ -1557,6 +1601,10 @@ button {
           flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.documents__content-card-header .header-left .header-left__icon {
+  margin-left: 8px;
 }
 
 .documents__content-card-header .header-left .header-left__content {
@@ -1593,7 +1641,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 82px;
+  margin-left: 72px;
 }
 
 .documents__content-card-header .header-right .btn-1 {
@@ -1657,24 +1705,27 @@ button {
 
 .card__function {
   margin-top: 20px;
-  padding-top: 12px;
-  padding-left: 16px;
+  padding-top: 10px;
+  padding-left: 12px;
 }
 
 .card__function h2 {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 20px;
-  /* identical to box height */
   color: #000000;
 }
 
-.card__function p {
+.card__function .card__function-content {
+  margin-right: 6px;
   height: 148px;
   overflow: scroll;
-  margin-right: 34.36px;
+}
+
+.card__function p {
+  margin-right: 20px;
   text-align: justify;
   font-style: normal;
   font-weight: normal;
@@ -1685,7 +1736,12 @@ button {
 
 .card__GeneRIFs {
   margin-top: 20px;
-  padding-top: 12px;
+  padding-top: 10px;
+  padding-left: 12px;
+}
+
+.GeneRIFs__header {
+  margin-bottom: 10px;
 }
 
 .GeneRIFs__header .header-left {
@@ -1695,7 +1751,7 @@ button {
 .GeneRIFs__header .header-left h2 {
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 20px;
   color: #000000;
 }
@@ -1730,24 +1786,25 @@ button {
 .GeneRIFs__all-content {
   height: 255px;
   overflow: scroll;
+  margin-right: 6px;
 }
 
 .card__go-biological {
   margin-top: 20px;
   padding-top: 0px;
+  padding-left: 0;
 }
 
 .card__go-biological .leftbar {
   width: 262px;
-  padding-bottom: 60px;
   background: #FAFAFA;
   border-radius: 3px 0px 3px 3px;
 }
 
 .card__go-biological .leftbar .leftbar-heading {
-  padding-bottom: 12px;
+  margin-bottom: 10px;
   padding-left: 24px;
-  padding-top: 12px;
+  margin-top: 20px;
 }
 
 .card__go-biological .leftbar .leftbar-heading h3 {
@@ -1759,6 +1816,9 @@ button {
 }
 
 .card__go-biological .leftbar .leftbar-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FAFAFA;
   -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.14), 0px -1px 0px #E0E0E0;
           box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.14), 0px -1px 0px #E0E0E0;
@@ -1768,7 +1828,17 @@ button {
   background: #ffffff;
 }
 
+.card__go-biological .leftbar .leftbar-list--active .title--active {
+  color: #EC407A;
+  font-weight: bold;
+}
+
+.card__go-biological .leftbar .leftbar-list--active .image {
+  display: block;
+}
+
 .card__go-biological .leftbar .title {
+  cursor: pointer;
   width: 196px;
   margin-top: 14px;
   margin-bottom: 14px;
@@ -1783,18 +1853,12 @@ button {
   letter-spacing: 0.4px;
 }
 
-.card__go-biological .leftbar .title1 {
-  color: #EC407A;
-  font-weight: bold;
-}
-
 .card__go-biological .leftbar .image {
-  margin-top: 12px;
+  cursor: pointer;
+  display: none;
   width: 24px;
   height: 24px;
-  background: url(../../images/main-body/ic_arrow_drop_down_24pxSIDE.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-left: 12px;
 }
 
 .card__go-biological .rightbar {
@@ -1803,7 +1867,7 @@ button {
   -webkit-box-shadow: -1px 0px 0px #E5E5E5;
           box-shadow: -1px 0px 0px #E5E5E5;
   border-radius: 0px 3px 3px 0px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-left: 30px;
 }
 
@@ -1817,24 +1881,22 @@ button {
 }
 
 .card__disease .leftbar {
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   width: 299px;
   border-radius: 3px 0px 3px 3px;
   background: #FAFAFA;
 }
 
-.card__disease .leftbar .leftbar__heading {
-  margin-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 16px;
-  width: 260px;
+.card__disease .leftbar__heading {
+  padding: 16px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.card__disease .leftbar .leftbar__heading .value {
+.card__disease .leftbar__heading .value {
   width: 175.97px;
 }
 
-.card__disease .leftbar .leftbar__heading .value h3 {
+.card__disease .leftbar__heading .value h3 {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -1842,20 +1904,17 @@ button {
   color: #000000;
 }
 
-.card__disease .leftbar .leftbar__heading .addicon {
+.card__disease .leftbar__heading .addicon {
   width: 24px;
   height: 24px;
   margin-left: 56px;
-  background: url(../../images/main-body/ic_add_circle_24pxG.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  font-size: 21px;
 }
 
-.card__disease .leftbar .title {
-  margin-left: 20px;
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-left: 24px;
+.card__disease .title {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1867,53 +1926,47 @@ button {
   letter-spacing: 0.4px;
 }
 
-.card__disease .leftbar .title1 {
+.card__disease .title1 {
   color: #EC407A;
   font-weight: bold;
 }
 
-.card__disease .leftbar .leftbar-list {
-  margin-top: 4px;
-  background: #FAFAFA;
-  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.14), 0px -1px 0px #E0E0E0;
-          box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.14), 0px -1px 0px #E0E0E0;
-}
-
-.card__disease .leftbar .image {
-  margin-top: 12px;
-  width: 24px;
-  height: 24px;
-  background: url(../../images/main-body/ic_arrow_drop_down_24px.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.card__disease .leftbar .options {
-  margin-bottom: 334px;
-  margin-left: 20px;
+.card__disease .options {
+  padding-bottom: 334px;
+  padding-left: 20px;
   background-color: #ffffff;
 }
 
-.card__disease .leftbar .options .btn-rounded {
+.card__disease .options .btn-rounded {
   background: transparent;
   margin-bottom: 16px;
 }
 
-.card__disease .leftbar .options .btn-rounded span {
-  margin: 4px 26px 6px 10px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.4px;
-  color: #000000;
-}
-
-.card__disease .leftbar .options .btn-rounded--bg-blue {
+.card__disease .options .btn-rounded--bg-blue {
   background: #304FFE;
   width: 140px;
 }
 
+.card__disease .leaftbar__heading--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__disease .drop-down-icon {
+  margin-left: 56px;
+}
+
 .card__disease .rightbar {
   width: 558px;
+  padding-top: 24px;
+  padding-left: 32px;
+  padding-right: 18px;
   background: #ffffff;
   -webkit-box-shadow: -1px 0px 0px #E5E5E5;
           box-shadow: -1px 0px 0px #E5E5E5;
@@ -1928,9 +1981,6 @@ button {
 }
 
 .card__disease .rightbar .heading h2 {
-  margin-top: 24px;
-  margin-left: 32px;
-  width: 92px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1939,8 +1989,7 @@ button {
 }
 
 .card__disease .rightbar .heading .icons {
-  margin-left: 354px;
-  margin-top: 24px;
+  margin-left: 360px;
 }
 
 .card__disease .rightbar .heading .icons .filter {
@@ -1962,18 +2011,17 @@ button {
 
 .card__disease .rightbar .rightbar__card {
   padding-bottom: 18px;
-  width: 506.2px;
-  background: #ffffff;
-  border: 1px solid #304FFE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  border: 1px solid #E0E0E0;
   border-radius: 3px;
-  margin-bottom: 8px;
-  margin-left: 34px;
+  margin-top: 16px;
 }
 
 .card__disease .rightbar .rightbar__card .topleft {
-  width: 87px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background: #EC407A;
   font-style: normal;
   font-weight: 500;
@@ -1986,6 +2034,8 @@ button {
 
 .card__disease .rightbar .checkbox__content {
   margin-left: 12px;
+  margin-top: 6px;
+  padding: 0;
 }
 
 .card__disease .rightbar .checkbox__content .input {
@@ -2014,8 +2064,8 @@ button {
 
 .card__disease .rightbar .checkbox__content .label {
   margin-left: 30px;
-  margin-top: 5px;
-  width: 100px;
+  margin-top: 4px;
+  margin-right: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -2026,11 +2076,11 @@ button {
 .card__disease .rightbar .checkbox__content .btn-rounded {
   margin-top: 4px;
   background: #80858B;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.card__disease .rightbar .checkbox__content .review a {
-  margin-left: 4px;
-  margin-right: 4px;
+.card__disease .rightbar .review {
   text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
@@ -2043,12 +2093,6 @@ button {
 .card__disease .rightbar .line {
   margin-left: 38px;
   margin-top: 16px;
-}
-
-.card__disease .rightbar .btn-rounded {
-  margin-top: 16px;
-  margin-left: 36px;
-  background: #ffffff;
 }
 
 .card__disease .rightbar .second {
@@ -2099,7 +2143,6 @@ button {
 }
 
 .card__disease .rightbar .rightbar__footer {
-  padding-left: 36px;
   padding-top: 16px;
 }
 
@@ -2122,7 +2165,15 @@ button {
   display: block;
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-left: 0;
+  border: none;
   background: #EC407A;
+}
+
+.bg-color--french-rose {
+  margin-top: 20px;
+  background: #EC407A;
+  width: 116px;
 }
 
 .smallcard {
@@ -2188,6 +2239,7 @@ button {
 }
 
 .smallcard__profile .smallcard__profiles .profile .profile__name {
+  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2195,11 +2247,13 @@ button {
 }
 
 .smallcard__profile .smallcard__profiles .profile .profile__name a {
+  cursor: pointer;
   color: #000000;
   line-height: 20px;
 }
 
 .smallcard__profile .smallcard__profiles .profile .profile__name .position {
+  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -2598,8 +2652,6 @@ button {
 }
 
 .target-forms {
-  width: 1200px;
-  margin: 0 auto;
   background-color: #E5E5E5;
 }
 
@@ -2609,12 +2661,15 @@ button {
 
 .target-form__save-btn {
   width: 116px;
+  border: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 .target-form__mainbody {
@@ -2692,10 +2747,16 @@ button {
   height: 24px;
 }
 
+.target-form__card .form-card__heading i {
+  margin-top: 4px;
+  font-size: 20px;
+  margin-left: 16px;
+}
+
 .target-form__card .form-card__heading .add {
   width: 24px;
   height: 24px;
-  margin-left: 20px;
+  text-align: center;
 }
 
 .target-form__card .left-card .left-card__menu {
@@ -2704,105 +2765,79 @@ button {
   border-bottom: 1px solid #E0E0E0;
 }
 
-.target-form__card .left-card .menu-items {
+.target-form__card .menu-items {
   padding-top: 14px;
   padding-left: 24px;
   padding-bottom: 14px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.target-form__card .left-card .menu-items h3 {
+.target-form__card .menu-items h3 {
   width: 182px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.4px;
+  margin-left: 10px;
   color: #9E9D9D;
 }
 
-.target-form__card .left-card .menu-items .info-icon {
-  height: 18px;
-  width: 18px;
-  background: url(../../images/target-form/arrow_drop_down_copy_2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.target-form__card .left-card .menu-items .arrow-icon {
-  height: 10px;
-  width: 10px;
-  background: url(../../images/target-form/ic_arrow_drop_down_24px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.target-form__card .left-card .menu-items .menu-details--first {
+.target-form__card .menu-items .menu-details--first {
   display: none;
 }
 
-.target-form__card .left-card .menu-items .menu-details--last {
+.target-form__card .menu-items .menu-details--last {
   display: none;
 }
 
-.target-form__card .left-card .menu-items--active {
+.target-form__card .menu-items--active {
   background: #ffffff;
 }
 
-.target-form__card .left-card .menu-items--active h3 {
+.target-form__card .menu-items--active h3 {
   color: #EC407A;
 }
 
-.target-form__card .left-card .menu-items--active .menu-details--first {
+.target-form__card .menu-items--active .menu-details--first {
   display: block;
 }
 
-.target-form__card .left-card .menu-items--active .menu-details--last {
+.target-form__card .menu-items--active .menu-details--last {
   display: block;
 }
 
-.target-form__card .left-card .menu-items--active .info-icon--active {
-  background: url(../../images/target-form/ic_info_24pxA.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.target-form__card .menu-items--active .info-icon--active {
+  color: #EC407A;
 }
 
-.target-form__card .left-card .menu-items--active .arrow-icon--active {
-  background: url(../../images/target-form/ic_arrow_drop_down_24pxA.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.target-form__card .menu-items--active .arrow-icon--active {
+  color: #EC407A;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
-.target-form__card .left-card .menu-items--active .menu-details {
+.target-form__card .menu-items--active .menu-details {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 4px;
   width: 100%;
 }
 
-.target-form__card .left-card .menu-items--active .menu-details .active-arrow-icon {
+.target-form__card .menu-items--active .menu-details .active-arrow-icon {
   float: left;
   width: 24px;
   height: 24px;
 }
 
-.target-form__card .left-card .menu-items--active .menu-details .active-arrow-icon img {
+.target-form__card .menu-items--active .menu-details .active-arrow-icon img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.target-form__card .left-card .menu-items--active .menu-details .active-arrow-value {
+.target-form__card .menu-items--active .menu-details .active-arrow-value {
   float: left;
   margin-left: 12px;
   font-style: normal;
@@ -2813,11 +2848,11 @@ button {
   color: #000000;
 }
 
-.target-form__card .left-card .menu-items--active .menu-details--first {
+.target-form__card .menu-items--active .menu-details--first {
   margin-top: 20px;
 }
 
-.target-form__card .left-card .menu-items--active .menu-details--last {
+.target-form__card .menu-items--active .menu-details--last {
   margin-bottom: 6px;
 }
 
@@ -2825,12 +2860,19 @@ button {
   padding-bottom: 42px;
 }
 
-.target-form__card .right-card .target-form__right-card-heading {
+.target-form__card .right-card .rectangle {
+  width: 442px;
+  margin-left: 30px;
+  margin-top: 18px;
+  background-color: #BDBDBD;
+}
+
+.target-form__card .target-form__right-card-heading {
   margin-left: 30px;
   margin-top: 24px;
 }
 
-.target-form__card .right-card .target-form__right-card-heading h2 {
+.target-form__card .target-form__right-card-heading h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2838,16 +2880,16 @@ button {
   color: #223741;
 }
 
-.target-form__card .right-card .target-form__right-card-heading .view-qc-info {
+.target-form__card .target-form__right-card-heading .view-qc-info {
   margin-left: 180px;
 }
 
-.target-form__card .right-card .target-form__right-card-heading .view-qc-info .lunchicon {
+.target-form__card .target-form__right-card-heading .view-qc-info .lunchicon {
   width: 18px;
   height: 18px;
 }
 
-.target-form__card .right-card .target-form__right-card-heading .view-qc-info .lunchicon img {
+.target-form__card .target-form__right-card-heading .view-qc-info .lunchicon img {
   -o-object-fit: cover;
      object-fit: cover;
   -ms-flex-item-align: center;
@@ -2855,7 +2897,7 @@ button {
       align-self: center;
 }
 
-.target-form__card .right-card .target-form__right-card-heading .view-qc-info span {
+.target-form__card .target-form__right-card-heading .view-qc-info span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2864,14 +2906,15 @@ button {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.4px;
+  margin-left: 8px;
   color: #304FFE;
 }
 
-.target-form__card .right-card .right-card__bar {
+.target-form__card .right-card__bar {
   position: relative;
 }
 
-.target-form__card .right-card .right-card__bar .value-bar {
+.target-form__card .right-card__bar .value-bar {
   position: absolute;
   margin-left: 30px;
   margin-top: 24px;
@@ -2881,7 +2924,7 @@ button {
   border-radius: 13px;
 }
 
-.target-form__card .right-card .right-card__bar .yellow-bar {
+.target-form__card .right-card__bar .yellow-bar {
   position: absolute;
   width: 84px;
   height: 8px;
@@ -2891,7 +2934,7 @@ button {
   border-radius: 13px;
 }
 
-.target-form__card .right-card .right-card__bar .blue-bar {
+.target-form__card .right-card__bar .blue-bar {
   position: absolute;
   width: 214px;
   height: 8px;
@@ -2901,30 +2944,23 @@ button {
   border-radius: 13px;
 }
 
-.target-form__card .right-card .review-circular-indicator {
+.target-form__card .review-circular-indicator {
   margin-left: 30px;
   margin-top: 54px;
 }
 
-.target-form__card .right-card .review-circular-indicator .circular-indicator--selective-yellow {
+.target-form__card .review-circular-indicator .circular-indicator--selective-yellow {
   background: #F7B500;
 }
 
-.target-form__card .right-card .review-circular-indicator .circular-indicator--electric-violet {
+.target-form__card .review-circular-indicator .circular-indicator--electric-violet {
   background: #6236FF;
   margin-left: 40px;
 }
 
-.target-form__card .right-card .review-circular-indicator .structural-biology__label {
+.target-form__card .review-circular-indicator .structural-biology__label {
   color: #000000;
   font-weight: normal;
-}
-
-.target-form__card .right-card .rectangle {
-  width: 442px;
-  margin-left: 30px;
-  margin-top: 18px;
-  background-color: #BDBDBD;
 }
 
 .target-form__card .review-form__short-overview {
@@ -2950,19 +2986,9 @@ button {
   background: #B9DDFC;
 }
 
-.target-form__card .review-form__short-overview .overview-heading-btn span {
-  color: #000000;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .target-form__card .review-form__short-overview .overview-heading-btn .image {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-left: 10px;
-  margin-right: 8px;
+  margin-left: 6px;
+  margin-right: 4px;
 }
 
 .target-form__card .review-form__short-overview .overview-heading-btn--ml {
@@ -2985,11 +3011,10 @@ button {
 }
 
 .target-form__card .review-form__short-overview--tags .addicon {
-  height: 20px;
   width: 20px;
 }
 
-.target-form__card .review-form__short-overview--tags .addicon img {
+.target-form__card .review-form__short-overview--tags .addicon i {
   margin-left: 320px;
   vertical-align: middle;
 }
@@ -3009,47 +3034,6 @@ button {
   opacity: 0.4;
 }
 
-.target-form__card .review-form__comments .comment .profile {
-  margin-top: 7px;
-}
-
-.target-form__card .review-form__comments .comment .profile .profile__image {
-  height: 38px;
-  width: 38px;
-  overflow: hidden;
-}
-
-.target-form__card .review-form__comments .comment .profile .profile__image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.target-form__card .review-form__comments .comment .profile .profile__name {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 10px;
-}
-
-.target-form__card .review-form__comments .comment .profile .profile__name .name {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000000;
-}
-
-.target-form__card .review-form__comments .comment .profile .profile__name .description {
-  width: 392px;
-  margin-top: 8px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  color: #707478;
-}
-
 .target-form__card .review-form__comments .rectangle {
   width: 392px;
   margin-top: 10px;
@@ -3059,12 +3043,53 @@ button {
   margin-top: 10px;
 }
 
+.target-form__card .comment .profile {
+  margin-top: 7px;
+}
+
+.target-form__card .comment .profile .profile__image {
+  height: 38px;
+  width: 38px;
+  overflow: hidden;
+}
+
+.target-form__card .comment .profile .profile__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.target-form__card .comment .profile .profile__name {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.target-form__card .comment .profile .profile__name .name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.target-form__card .comment .profile .profile__name .description {
+  width: 392px;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #707478;
+}
+
 .target-form__card .review-form__location {
   margin-top: 32px;
   margin-left: 26px;
 }
 
-.target-form__card .review-form__location .location__header {
+.target-form__card .location__header {
   padding-top: 12px;
   padding-bottom: 14px;
   width: 441px;
@@ -3073,7 +3098,7 @@ button {
           box-shadow: 0px -1px 0px #EFF2F7, 0px 1px 0px #EFF2F7;
 }
 
-.target-form__card .review-form__location .location__header .header__label {
+.target-form__card .location__header .header__label {
   width: 54px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -3085,15 +3110,15 @@ button {
   color: #9FAAB7;
 }
 
-.target-form__card .review-form__location .location__header .label--1 {
+.target-form__card .location__header .label--1 {
   margin-left: 16px;
 }
 
-.target-form__card .review-form__location .location__header .label--2 {
+.target-form__card .location__header .label--2 {
   margin-left: 236px;
 }
 
-.target-form__card .review-form__location .location__body {
+.target-form__card .location__body {
   margin-right: 20px;
   padding-top: 14px;
   padding-bottom: 18px;
@@ -3107,7 +3132,7 @@ button {
   color: #223741;
 }
 
-.target-form__card .review-form__location .location__body--1 {
+.target-form__card .location__body--1 {
   margin-left: 16px;
   width: 289px;
 }
@@ -3150,42 +3175,43 @@ button {
   margin-left: 0px;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn {
+.target-form__card .right-card__footer--btn {
   margin-top: 28px;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .rect-btn {
+.target-form__card .right-card__footer--btn .rect-btn {
+  border: none;
   margin-left: 4px;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .blaze-orange--btn {
+.target-form__card .right-card__footer--btn .blaze-orange--btn {
   background: #FA6400;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .blaze-orange--btn .value {
+.target-form__card .right-card__footer--btn .blaze-orange--btn .value {
   margin-left: 26px;
   margin-right: 26px;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .french-rose--btn {
+.target-form__card .right-card__footer--btn .french-rose--btn {
   background: #EC407A;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .french-rose--btn img {
+.target-form__card .right-card__footer--btn .french-rose--btn img {
   margin-left: 18px;
   vertical-align: middle;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .french-rose--btn .value {
+.target-form__card .right-card__footer--btn .french-rose--btn .value {
   margin-left: 8px;
   margin-right: 18px;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .blue-ribbion--btn {
+.target-form__card .right-card__footer--btn .blue-ribbion--btn {
   background: #304FFE;
 }
 
-.target-form__card .right-card__footer .right-card__footer--btn .blue-ribbion--btn .value {
+.target-form__card .right-card__footer--btn .blue-ribbion--btn .value {
   margin-left: 18px;
   margin-right: 18px;
 }
@@ -4251,16 +4277,6 @@ button {
 
 .protein-request__date-form .inputfield__card-4 .dropdown-icon {
   margin-top: 8px;
-}
-
-.rect-btn {
-  margin-left: 24px;
-  margin-top: 24px;
-}
-
-.rect-btn .value {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .french-rose--btn {

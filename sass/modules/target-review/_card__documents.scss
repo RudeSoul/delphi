@@ -2,19 +2,20 @@
     margin-top: 20px;
     margin-left: 12px;
     padding: 0;
-    padding-bottom: 54px;
+    // padding-bottom: 24px;
 
     .rectangle {
-        margin-top: 12px;
+        margin-top: 13px;
         width: 480px;
+        opacity: 0.3;
     }
 }
 
 .documents__header {
     margin-top: 20px;
-    margin-left: 20px;
 
     h2 {
+        margin-left: 20px;
         float: left;
         font-style: normal;
         font-weight: 500;
@@ -69,11 +70,13 @@
     }
 }
 
+
 .documents__all-content {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 14px;
+    margin-right: 6px;
     padding-top: 12px;
-    height: 375px;
+    height: 402px;
     overflow: scroll;
 
     .documents__content-card {
@@ -91,6 +94,10 @@
     align-content: center;
 
     .header-left {
+        .header-left__icon {
+            margin-left: 8px;
+        }
+
         .header-left__content {
             flex-direction: column;
             margin-left: 8px;
@@ -123,7 +130,7 @@
 
     .header-right {
         flex-direction: row;
-        margin-left: 82px;
+        margin-left: 72px;
 
 
 

@@ -11,7 +11,7 @@
     <!--build:css css/style.css-->
     <link rel="stylesheet" href="dist/css/style.css">
     <!--endbuild-->
-
+    <script src="https://kit.fontawesome.com/6305c93d80.js" crossorigin="anonymous"></script>
     <script src="script.js" defer> </script>
 </head>
 
@@ -20,25 +20,25 @@
 
         <header class="flex header">
             <div class="flex header-menu">
-                <div class="flex burger-menu">
-                    <!-- <img src="images/header/Vector.png" alt="burger menu"> -->
+                <div class="burger-menu">
+
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="white" />
                     </svg>
 
                 </div>
 
-                <div class="flex dash">
-                    <!-- <img src="images/header/Rectangle 14.png" alt="dash"> -->
+                <div class="dash">
+
                     <svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect opacity="0.3" width="1" height="24" fill="white" />
                     </svg>
 
 
                 </div>
-                <div class="flex home-icon">
-                    <img src="images/header/ic_home_24px.png" alt="home">
-                    <!-- <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="home-icon">
+
+                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18"
                             height="15">
                             <path
@@ -48,11 +48,11 @@
                         <g mask="url(#mask0)">
                             <rect x="-1" y="-2" width="20" height="20" fill="white" />
                         </g>
-                    </svg> -->
+                    </svg>
 
 
                 </div>
-                <div class="flex company-name">
+                <div class="company-name">
                     <a href="#">Delphi</a>
 
                 </div>
@@ -60,10 +60,10 @@
 
             <div class="flex profile">
                 <div class="flex profile__image">
-                    <img src="images/header/Rectangle 19.png" alt="profile">
+                    <img src="images/header/Rectangle 19.png" draggable="false" alt="profile">
                 </div>
                 <div class="flex profile__name">
-                    <a href="#">John Smith</a>
+                    <a href="#" draggable="false">John Smith</a>
                 </div>
             </div>
 
@@ -79,14 +79,7 @@
                 </div>
 
                 <div class="short-overview__icon">
-                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
-                            <path d="M0 0L5 5L10 0H0Z" fill="white" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <rect x="-7" y="-10" width="24" height="24" fill="#BDBDBD" />
-                        </g>
-                    </svg>
+                    <i class="fas fa-sort-down color--white"></i>
                 </div>
                 <div class="dropdown-options">
                     <ul>
@@ -105,14 +98,7 @@
 
                 </div>
                 <div class="short-overview__icon">
-                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
-                            <path d="M0 0L5 5L10 0H0Z" fill="white" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <rect x="-7" y="-10" width="24" height="24" fill="#BDBDBD" />
-                        </g>
-                    </svg>
+                    <i class="fas fa-sort-down color--white"></i>
                 </div>
                 <div class="rectangle border-bottom"></div>
 
@@ -209,15 +195,7 @@
 
                     </div>
                     <div class="short-overview__icon">
-                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10"
-                                height="5">
-                                <path d="M0 0L5 5L10 0H0Z" fill="white" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <rect x="-7" y="-10" width="24" height="24" fill="#BDBDBD" />
-                            </g>
-                        </svg>
+                        <i class="fas fa-sort-down fa-sort-down__color--oslo-gray"></i>
                     </div>
                     <div class="rectangle border-bottom"></div>
 
@@ -233,7 +211,7 @@
                         <span class="ic-lunch__placeholder">TRKA</span>
                         <span class="ic-lunch__icon">
 
-                            <img src="images/main-body/ic_launch_24px.png" alt="">
+                            <img src="images/main-body/ic_launch_24px.png" draggable="false" alt="">
 
                         </span>
                     </div>
@@ -243,7 +221,7 @@
                         <span class="ic-lunch__placeholder">P04629</span>
                         <span class="ic-lunch__icon">
 
-                            <img src="images/main-body/ic_launch_24px.png" alt="">
+                            <img src="images/main-body/ic_launch_24px.png" draggable="false" alt="">
 
                         </span>
                     </div>
@@ -278,9 +256,7 @@
 
                         </div>
                         <div class="short-overview__icon">
-                            <img src="images/main-body/ic_add_circle_24px.png" alt="add">
-
-
+                            <i class="fas fa-plus-circle color--blue-ribbion"></i>
                         </div>
                         <div class="rectangle border-bottom"></div>
 
@@ -294,20 +270,7 @@
 
                         </div>
                         <div class="short-overview__icon">
-                            <!-- <img src="images/main-body/ic_add_circle_24px.png" alt="add"> -->
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14"
-                                    height="14">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.333252 6.99992C0.333252 3.31992 3.31992 0.333252 6.99992 0.333252C10.6799 0.333252 13.6666 3.31992 13.6666 6.99992C13.6666 10.6799 10.6799 13.6666 6.99992 13.6666C3.31992 13.6666 0.333252 10.6799 0.333252 6.99992ZM7.66658 7.66658H10.3333V6.33325H7.66658V3.66658H6.33325V6.33325H3.66658V7.66658H6.33325V10.3333H7.66658V7.66658Z"
-                                        fill="white" />
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <rect x="-1" y="-1" width="16" height="16" fill="#304FFE" />
-                                </g>
-                            </svg>
-
+                            <i class="fas fa-plus-circle color--blue-ribbion"></i>
 
                         </div>
                         <div class="rectangle border-bottom"></div>
@@ -319,24 +282,26 @@
                         <div class="short-overview__frame">
                             <a href="#" class="short-overview__label">Indications</a>
                         </div>
-                        <button class="inline-block btn-rounded">
+                        <div class="inline-block btn-rounded color--white">
                             <span>perineural invasion</span>
-                            <span class="image">
-                                <img src="images/main-body/ic_close_24px.png" alt="close">
-                            </span>
-                        </button>
-                        <button class="inline-block btn-rounded">
+                            <button class="image">
+
+                                <i class="fas fa-times color--white size--s"></i>
+                            </button>
+                        </div>
+                        <div class="inline-block btn-rounded color--white">
                             <span>CRC</span>
-                            <span class="image">
-                                <img src="images/main-body/ic_close_24px.png" alt="close">
-                            </span>
-                        </button>
-                        <button class="inline-block btn-rounded btn-rounded--disable">
+                            <button class="image">
+                                <i class="fas fa-times color--white size--s"></i>
+                            </button>
+                        </div>
+                        <div class="inline-block btn-rounded btn-rounded--disable  color--white">
                             <span>head & neck cancer</span>
-                            <span class="image">
-                                <img src="images/main-body/ic_close_24px.png" alt="close">
-                            </span>
-                        </button>
+                            <button class="image">
+
+                                <i class="fas fa-times color--white size--s"></i>
+                            </button>
+                        </div>
                         <div class="rectangle border-bottom"></div>
 
                     </div>
@@ -351,18 +316,7 @@
 
                         </div>
                         <div class="short-overview__icon">
-                            <!-- <img src="images/main-body/ic_arrow_drop_down_24px.png" alt="add"> -->
-                            <svg width="10" height="5" viewBox="0 0 10 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10"
-                                    height="5">
-                                    <path d="M0 0L5 5L10 0H0Z" fill="white" />
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <rect x="-7" y="-10" width="24" height="24" fill="#BDBDBD" />
-                                </g>
-                            </svg>
-
+                            <i class="fas fa-sort-down fa-sort-down__color--oslo-gray"></i>
                         </div>
                         <div class="rectangle border-bottom"></div>
 
@@ -380,8 +334,20 @@
                         </h2>
                     </header>
 
-                    <div class="fullscreen"> <img src="images/main-body/ic_fullscreen_24px.png" alt="full screen"></div>
-                    <div class="more"><img src="images/main-body/ic_more_vert_24px.png" alt="more"></div>
+                    <div class="fullscreen">
+                        <!-- <img src="images/main-body/ic_fullscreen_24px.png" alt="full screen"
+                            draggable="false"> -->
+                        <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.00045 11.1895H5.00045V5.76685H10.0005V7.9359H7.00045V11.1895ZM5 15.5279H7V18.7814H10V20.9505H5V15.5279ZM17 18.7815H14V20.9506H19V15.5279H17V18.7815ZM14 7.93597V5.76691H19V11.1896H17V7.93597H14Z"
+                                fill="black" />
+                        </svg>
+
+                    </div>
+                    <div class="more">
+
+                        <i class="fas fa-ellipsis-v fa-sort-down__color--oslo-gray"></i>
+                    </div>
                 </section>
                 <section class="flex structural-btn">
                     <button class="btn btn__structural">
@@ -431,12 +397,50 @@
             <article class="card card--m card__pubmed">
                 <header class="flex pubmed__header">
                     <h2>PubMed Articles</h2>
-                    <img src="images/main-body/ic_search_24px.png" alt="search">
+                    <div class="search-icon">
+                        <i class="fas fa-search size--2x color--oslo-gray"></i>
+                    </div>
 
 
                 </header>
                 <div class="rectangle"></div>
                 <article class="pubmed__all-content">
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
+                    <div class="flex pubmed__content">
+                        <img src="images/main-body/Group_192.png" alt="pubmed content">
+                        <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
+                    </div>
                     <div class="flex pubmed__content">
                         <img src="images/main-body/Group_192.png" alt="pubmed content">
                         <p>Esterase and protease activity of purified guinea pig basophil granules.</p>
@@ -703,21 +707,31 @@
 
             <article class="card card--xl card__function">
                 <h2>Function</h2>
-                <p>Receptor tyrosine kinase involved in the development and the maturation of the central and peripheral
-                    nervous systems through regulation of proliferation, differentiation and survival of sympathetic and
-                    nervous neurons. High affinity receptor for NGF which is its primary ligand (PubMed:1850821,
-                    PubMed:1849459, PubMed:1281417, PubMed:8325889, PubMed:15488758, PubMed:22649032, PubMed:17196528,
-                    PubMed:27445338). Can also bind and be activated by NTF3/neurotrophin-3. However, NTF3 only supports
-                    axonal extension through NTRK1 but has no effect on neuron survival (By similarity). Upon dimeric
-                    NGF ligand-binding, undergoes homodimerization, autophosphorylation and activation (PubMed:1281417).
-                    Recruits, phosphorylates and/or activates several downstream effectors including SHC1, FRS2, SH2B1,
-                    SH2B2 and PLCG1 that regulate distinct overlapping signaling cascades driving cell survival and
-                    differentiation. Through SHC1 and FRS2 activates a GRB2-Ras-MAPK cascade that regulates cell
-                    differentiation and survival. Through PLCG1 controls NF-Kappa-B activation and the transcription of
-                    genes involved in cell survival. Through SHC1 and SH2B1 controls a Ras-PI3 kinase-AKT1 signaling
-                    cascade that is also regulating survival. In absence of ligand and activation, may promote cell
-                    death, making the survival of neurons dependent on trophic factors.
-                </p>
+                <div class="card__function-content">
+                    <p>Receptor tyrosine kinase involved in the development and the maturation of the central and
+                        peripheral
+                        nervous systems through regulation of proliferation, differentiation and survival of sympathetic
+                        and
+                        nervous neurons. High affinity receptor for NGF which is its primary ligand (PubMed:1850821,
+                        PubMed:1849459, PubMed:1281417, PubMed:8325889, PubMed:15488758, PubMed:22649032,
+                        PubMed:17196528,
+                        PubMed:27445338). Can also bind and be activated by NTF3/neurotrophin-3. However, NTF3 only
+                        supports
+                        axonal extension through NTRK1 but has no effect on neuron survival (By similarity). Upon
+                        dimeric
+                        NGF ligand-binding, undergoes homodimerization, autophosphorylation and activation
+                        (PubMed:1281417).
+                        Recruits, phosphorylates and/or activates several downstream effectors including SHC1, FRS2,
+                        SH2B1,
+                        SH2B2 and PLCG1 that regulate distinct overlapping signaling cascades driving cell survival and
+                        differentiation. Through SHC1 and FRS2 activates a GRB2-Ras-MAPK cascade that regulates cell
+                        differentiation and survival. Through PLCG1 controls NF-Kappa-B activation and the transcription
+                        of
+                        genes involved in cell survival. Through SHC1 and SH2B1 controls a Ras-PI3 kinase-AKT1 signaling
+                        cascade that is also regulating survival. In absence of ligand and activation, may promote cell
+                        death, making the survival of neurons dependent on trophic factors.
+                    </p>
+                </div>
             </article>
 
             <article class="card card--xl card__GeneRIFs">
@@ -730,13 +744,13 @@
                             2 items selected
                         </div>
                         <div class="delete-icon">
-                            <img src="images/main-body/ic_delete_24px.png" alt="">
+                            <i class="fas fa-trash color--oslo-gray"></i>
                         </div>
                     </div>
                 </header>
                 <div class="GeneRIFs__all-content">
                     <div class="flex checkbox__content">
-                        <div class="input checked"></div>
+                        <div class="input checked" id="checkbox1" onclick="checkUncheck(1)"></div>
                         <p>We identified TrkA, a neurotrophin receptor tyrosine kinase, as a TRAF4-targeted
                             ubiquitination
                             substrate that promotes prostate cancer cell invasion, and found that inhibition of TrkA
@@ -744,13 +758,13 @@
                                 src="images/main-body/ic_launch_24px.png" alt="lunch"></p>
                     </div>
                     <div class="flex checkbox__content">
-                        <div class="input"></div>
+                        <div class="input "></div>
                         <p>NTRK1 gene fusion occurs in primary and metastatic melanomas.
                             <img src="images/main-body/ic_launch_24px.png" alt="lunch">
                         </p>
                     </div>
                     <div class="flex checkbox__content">
-                        <div class="input checked"></div>
+                        <div class="input checked" id="checkbox2" onclick="checkUncheck(2)"></div>
                         <p>Report a novel subset of high-grade uterine sarcomas with features reminiscent of soft tissue
                             fibrosarcoma and characterized by oncogenic activation of Trk through recurrent NTRK gene
                             fusions.<img src="images/main-body/ic_launch_24px.png" alt="lunch"></p>
@@ -791,11 +805,13 @@
                     <header class="leftbar-heading">
                         <h3>GO Biological Process</h3>
                     </header>
-                    <div class="flex leftbar-list leftbar-list--active">
-                        <div class="title title1">
+                    <div class="flex leftbar-list leftbar-list--active" id="goBiologicalTab"
+                        onclick="goBiologicalTab()">
+                        <div class="title title--active">
 
                             Potassium ion transmembrane transport</div>
                         <div class="image">
+                            <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
                         </div>
                     </div>
                     <div class="flex leftbar-list ">
@@ -804,10 +820,14 @@
                             Potassium ion transmembrane transport</div>
 
                     </div>
+                    <div class="image">
+                        <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
+
+                    </div>
 
                 </section>
-                <section class="rightbar">
-                    <div class="flex lunchicon__content">
+                <section class="rightbar ">
+                    <div class="flex lunchicon__content" id="goBiologicalContent1">
                         <div class="lunchicon">
 
                         </div>
@@ -821,7 +841,7 @@
                             </div>
                         </div>
                     </div>
-                    <article class="flex lunchicon__content">
+                    <article class="flex lunchicon__content" id="goBiologicalContent2">
                         <div class="lunchicon">
 
                         </div>
@@ -845,10 +865,12 @@
                         <h3>GO Cellular Compartmentalization</h3>
                     </header>
                     <div class="flex leftbar-list leftbar-list--active">
-                        <div class="title title1">
+                        <div class="title title--active">
 
                             Golgi apparatus</div>
                         <div class="image">
+                            <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
+
                         </div>
                     </div>
                     <div class="flex leftbar-list ">
@@ -857,10 +879,18 @@
                             Cell division site</div>
 
                     </div>
+                    <div class="image">
+                        <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
+
+                    </div>
                     <div class="flex leftbar-list ">
                         <div class="title">
 
                             Cell tip</div>
+                        <div class="image">
+                            <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
+
+                        </div>
 
                     </div>
 
@@ -903,22 +933,32 @@
                         <h3>GO Cellular Compartmentalization</h3>
                     </header>
                     <div class="flex leftbar-list leftbar-list--active">
-                        <div class="title title1">
+                        <div class="title title--active">
 
                             Golgi apparatus</div>
                         <div class="image">
+                            <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
+
                         </div>
                     </div>
                     <div class="flex leftbar-list ">
                         <div class="title">
 
                             Cell division site</div>
+                        <div class="image">
+                            <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
+
+                        </div>
 
                     </div>
                     <div class="flex leftbar-list ">
                         <div class="title">
 
                             Cell tip</div>
+                        <div class="image">
+                            <i class="fas fa-sort-down rotate-90 color--oslo-gray"></i>
+
+                        </div>
 
                     </div>
 
@@ -963,6 +1003,8 @@
                             <h3>Disease Association</h3>
                         </div>
                         <div class="addicon">
+                            <!-- <i class="fas fa-plus-circle color--oslo-gray"></i> -->
+                            <img src="images/main-body/ic_add_circle_24pxG.png" alt="">
 
                         </div>
                     </div>
@@ -970,25 +1012,28 @@
 
                         Genetic</div>
                     <div class="options">
-                        <button class="btn-rounded btn-rounded--bg-blue">
-                            <span>pancreatic cancer</span>
-                        </button>
-                        <button class="inline-block btn-rounded ">
+                        <div class="btn-rounded btn-rounded--bg-blue ">
+                            <span class="color--white">pancreatic cancer</span>
+                        </div>
+                        <div class="inline-block btn-rounded ">
                             <span>head/neck cancer</span>
-                        </button>
-                        <button class="inline-block btn-rounded ">
+                        </div>
+                        <div class="inline-block btn-rounded ">
                             <span>prostate cancer</span>
-                        </button>
-                        <button class=" btn-rounded ">
+                        </div>
+                        <div class=" btn-rounded ">
                             <span>neuroendocrine tumors</span>
-                        </button>
+                        </div>
 
                     </div>
-                    <div class="flex leftbar-list leftbar-list--active">
-                        <div class="title">
+                    <div class="flex leftbar__heading">
+                        <div class="value leaftbar__heading--footer">
+                            Therapeutic
 
-                            Therapeutic</div>
-                        <div class="image">
+                        </div>
+                        <div class="drop-down-icon">
+                            <i class="fas fa-sort-down color--oslo-gray"></i>
+
                         </div>
                     </div>
 
@@ -1007,37 +1052,44 @@
                         </div>
                     </div>
                     <div class="rightbar__all-content">
-                        <section class="rightbar__card">
+                        <section class="rightbar__card border-color--blue">
                             <div class="topleft">
                                 Start Here
                             </div>
                             <div class="flex checkbox__content">
-                                <div class="input checked"></div>
-                                <p>Systemic Depletion of Nerve Growth Factor Inhibits Disease Progression in a
-                                    Genetically Engineered Model of Pancreatic Ductal Adenocarcinoma.
-                                </p>
-                                <div class="image"></div>
-                                <div class="label">
-                                    PMID: 29975347
+                                <div class="flex">
+                                    <div class="input checked" id="checkbox3" onclick="checkUncheck(3)"></div>
+                                    <p>Systemic Depletion of Nerve Growth Factor Inhibits Disease Progression in a
+                                        Genetically Engineered Model of Pancreatic Ductal Adenocarcinoma.
+                                    </p>
+                                    <div class="image"></div>
                                 </div>
-                                <button class="btn-rounded review"><a>review</a></button>
 
+                                <div class="flex">
+                                    <div class="label">
+                                        PMID: 29975347
+                                    </div>
+
+                                    <div class="inline-block btn-rounded">
+                                        <span class="review color--white">review</span>
+                                    </div>
+                                </div>
                                 <div class="line"></div>
 
 
                             </div>
-                            <button class="inline-block btn-rounded">
+                            <div class="inline-block btn-rounded mt-16 ml-36">
                                 <span class="btn-text">Start Here</span>
-                                <span class="image">
+                                <button class="image">
                                     <img src="images/main-body/ic_close_24pxB.png" alt="close">
-                                </span>
-                            </button>
-                            <button class="inline-block btn-rounded second">
-                                <span class="btn-text">Start Here</span>
-                                <span class="image">
-                                    <img src="images/main-body/ic_close_24pxB.png" alt="close">
-                                </span>
-                            </button>
+                                </button>
+                            </div>
+                            <div class="inline-block btn-rounded color--white">
+                                <span>Start Here</span>
+                                <button class="image">
+                                    <i class="fas fa-times color--white size--s"></i>
+                                </button>
+                            </div>
                             <div class="inline-block addtag">
                                 <span class="image">
                                     <img src="images/main-body/ic_add_circle_24px.png" alt="add">
@@ -1047,61 +1099,65 @@
 
                         </section>
                         <section class="rightbar__card">
+                            <div class="topleft visibility--none">
+                                Start Here
+                            </div>
                             <div class="flex checkbox__content">
-                                <div class="input checked"></div>
+                                <div class="input checked" id="checkbox4" onclick="checkUncheck(4)"></div>
                                 <p>A novel tropomyosin-related kinase A inhibitor, KK5101 to treat pancreatic cancer.
                                 </p>
                                 <div class="image"></div>
                                 <div class="label">
                                     PMID: 29605512
                                 </div>
-                                <button class="btn-rounded review"><a>review</a></button>
+                                <div class="inline-block btn-rounded">
+                                    <span class="review color--white">review</span>
+                                </div>
 
                                 <div class="line"></div>
 
 
                             </div>
-                            <button class="inline-block btn-rounded">
+                            <div class="inline-block btn-rounded mt-16 ml-36">
                                 <span class="btn-text">DEL Screening</span>
-                                <span class="image">
+                                <button class="image">
                                     <img src="images/main-body/ic_close_24pxB.png" alt="close">
-                                </span>
-                            </button>
-                            <button class="inline-block btn-rounded second">
-                                <span class="btn-text">Start Here</span>
+                                </button>
+                            </div>
+                            <div class="inline-block btn-rounded color--white">
+                                <span>Start Here</span>
+                                <button class="image">
+                                    <i class="fas fa-times color--white size--s"></i>
+                                </button>
+                            </div>
+                            <div class="inline-block addtag">
                                 <span class="image">
-                                    <img src="images/main-body/ic_close_24pxB.png" alt="close">
-                                </span>
-                            </button>
-                            <div class=" addtag">
-                                <div class="image">
                                     <img src="images/main-body/ic_add_circle_24px.png" alt="add">
-
-                                </div>
-                                <div class="tag-text">Add Tag</div>
+                                </span>
+                                <span class="tag-text">Add Tag</span>
                             </div>
 
                         </section>
                         <div class="rightbar__footer">
                             <h3>MeSH Terms</h3>
-                            <button class="inline-block btn-rounded">
+                            <div class="inline-block btn-rounded">
                                 <span class="btn-text">Apoptosis</span>
-                                <span class="image">
+                                <button class="image">
                                     <img src="images/main-body/ic_close_24pxB.png" alt="close">
-                                </span>
-                            </button>
-                            <button class="inline-block btn-rounded">
+                                </button>
+                            </div>
+                            <div class="inline-block btn-rounded">
                                 <span class="btn-text">KK5101</span>
-                                <span class="image">
+                                <button class="image">
                                     <img src="images/main-body/ic_close_24pxB.png" alt="close">
-                                </span>
-                            </button>
-                            <button class="inline-block btn-rounded">
+                                </button>
+                            </div>
+                            <div class="inline-block btn-rounded">
                                 <span class="btn-text">Pancreatic cancer</span>
-                                <span class="image">
+                                <button class="image">
                                     <img src="images/main-body/ic_close_24pxB.png" alt="close">
-                                </span>
-                            </button>
+                                </button>
+                            </div>
 
                             <button class="rect-btn btn--pink">
                                 <span class="value">
@@ -1341,7 +1397,7 @@
 
 
             </article>
-            <button class="rect-btn pink--btn">
+            <button class="rect-btn bg-color--french-rose" onclick="save()">
                 <span class="value">
                     Save
                 </span>

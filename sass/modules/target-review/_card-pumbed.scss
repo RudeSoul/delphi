@@ -5,48 +5,49 @@
     .rectangle {
         margin-top: 12px;
         width: 379px;
+        opacity: 0.3;
     }
 }
 
 .pubmed__header {
-    margin-left: 20px;
     margin-top: 20px;
-    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    // justify-content: space-evenly;
 
     h2 {
-        width: fit-content;
-        font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
+        margin-left: 20px;
 
         letter-spacing: 0.15px;
 
         color: $text-color--black;
-        order: 0;
     }
 
-    img {
+    .search-icon {
         height: 24px;
         width: 24px;
-        margin-right: 20px;
-        margin-top: -4px;
-        order: 1;
+        margin-left: 164px;
+        font-size: 18px;
+        text-align: center;
     }
 }
 
 .card__pubmed {
-    padding-bottom: 126px;
+    padding-bottom: 24px;
 }
 
 .pubmed__all-content {
-    height: 255px;
+    width: 376px;
+    height: 402px;
     overflow: scroll;
+    flex-direction: column;
 }
 
 .pubmed__content {
     padding-left: 20px;
-    justify-content: space-between;
 
     img {
         margin-top: 20px;
@@ -56,9 +57,11 @@
 
     p {
         margin-top: 16px;
+        margin-left: 12px;
         width: 300px;
         font-size: 14px;
         line-height: 17px;
+        word-break: all;
 
         letter-spacing: 0.25px;
 
