@@ -27,6 +27,7 @@
         margin-left: 12px;
         margin-top: 6px;
         margin-bottom: 6px;
+        opacity: 0.7;
 
         a {
             font-weight: bold;
@@ -34,17 +35,31 @@
             line-height: 22px;
 
             color: $primary-color;
-            mix-blend-mode: normal;
-            opacity: 0.7;
 
         }
 
     }
 
-    @include m(placeholder-active) {
-        margin-left: 10px;
+}
+
+.side-nav__menu--active {
+    .oval--active {
+        width: 20px;
+        height: 20px;
+        margin-left: 2px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-image: url(../../images/side-nav/Oval--active.png);
+        background-size: cover;
 
     }
+
+    .side-nav__menu--placeholder {
+        margin-left: 10px;
+
+        opacity: 1;
+    }
+
 }
 
 .oval {
@@ -57,16 +72,6 @@
 
 }
 
-.oval--active {
-    width: 20px;
-    height: 20px;
-    margin-left: 2px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    background-image: url(../../images/side-nav/Oval--active.png);
-    background-size: cover;
-
-}
 
 .rectangle--bar-m {
     width: 163px;

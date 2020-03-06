@@ -455,6 +455,10 @@ i {
   margin-left: 10px;
 }
 
+.ml-12 {
+  margin-left: 12px;
+}
+
 .mt-8 {
   margin-top: 8px;
 }
@@ -487,6 +491,10 @@ i {
 
 .mt-16 {
   margin-top: 16px;
+}
+
+.ml-24 {
+  margin-left: 24px;
 }
 
 .dropdown-options {
@@ -945,6 +953,10 @@ i {
   color: #304FFE;
 }
 
+.color--silver {
+  color: #BDBDBD;
+}
+
 .size--s {
   height: 8px;
   width: 8px;
@@ -1004,6 +1016,7 @@ i {
   margin-left: 12px;
   margin-top: 6px;
   margin-bottom: 6px;
+  opacity: 0.7;
 }
 
 .side-nav__menu--placeholder a {
@@ -1011,12 +1024,21 @@ i {
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.7;
 }
 
-.side-nav__menu--placeholder-active {
+.side-nav__menu--active .oval--active {
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-image: url(../../images/side-nav/Oval--active.png);
+  background-size: cover;
+}
+
+.side-nav__menu--active .side-nav__menu--placeholder {
   margin-left: 10px;
+  opacity: 1;
 }
 
 .oval {
@@ -1026,16 +1048,6 @@ i {
   width: 14px;
   height: 14px;
   background-image: url(../../images/side-nav/Oval.png);
-}
-
-.oval--active {
-  width: 20px;
-  height: 20px;
-  margin-left: 2px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-image: url(../../images/side-nav/Oval--active.png);
-  background-size: cover;
 }
 
 .rectangle--bar-m {
@@ -2315,6 +2327,7 @@ i {
 .tracer-ligand__mainbody .addicon {
   height: 48px;
   width: 48px;
+  border: none;
   -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.14);
           box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.14);
   border-radius: 50%;
@@ -2325,7 +2338,7 @@ i {
 }
 
 .tracer-ligand__mainbody .addicon img {
-  margin-top: 25%;
+  margin-top: 20%;
 }
 
 .details-card .details__heading .tracer-header {
@@ -2345,6 +2358,7 @@ i {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 40px;
+  border: none;
 }
 
 .details-card .details__heading .card-btn--top img {
@@ -3489,7 +3503,6 @@ i {
   cursor: pointer;
   width: 18px;
   height: 18px;
-  background: url(../../images/add-target-form/arrow_drop_down_3.png) no-repeat;
 }
 
 .add-target__menu-card--active {
@@ -3508,15 +3521,18 @@ i {
 
 .add-target__menu-card--active .menu-card__content h3 {
   color: #EC407A;
+  font-weight: bold;
 }
 
 .add-target__menu-card--active .menu-card__content .menu-card__content-image {
-  background: url(../../images/add-target-form/ic_arrow_drop_down_24px.png) no-repeat;
-  background-position: 4px 4px;
-}
-
-.add-target__menu-card--active .menu-card__content h3 {
-  font-weight: bold;
+  color: #EC407A;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: -12px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 4px;
 }
 
 .add-target-menu-card-active__content {
@@ -3567,6 +3583,7 @@ i {
 }
 
 .add-target__menu-form .form-btn {
+  border: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -3629,10 +3646,10 @@ i {
 }
 
 .add-target-right__body .rect-btn {
+  border: none;
   margin-left: 10px;
   margin-top: 20px;
   border-radius: 2px;
-  padding: 10px 0;
 }
 
 .add-target-right__body .selective-yellow--btn {
@@ -3657,14 +3674,6 @@ i {
 
 .add-target-right__body .french-rose--btn {
   background: #EC407A;
-}
-
-.add-target-right__body .default--btn {
-  background: #EFF2F7;
-}
-
-.add-target-right__body .default--btn .value {
-  color: #000000;
 }
 
 .add-target-right__body .killarney--btn {
@@ -3956,11 +3965,26 @@ i {
   background: #E0E0E0;
 }
 
+.add-target-form__footer {
+  margin-top: 16px;
+}
+
 .add-target-form__footer .rect-btn {
+  margin-left: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 2px;
   border: none;
+}
+
+.add-target-form__footer .default--btn {
+  background: transparent;
+  border-style: none;
+  -webkit-box-shadow: none;
+}
+
+.add-target-form__footer .default--btn .value {
+  color: #000000;
 }
 
 .add-target-form__footer .secondary-btn {
@@ -3991,6 +4015,25 @@ i {
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 3px 4px rgba(0, 0, 0, 0.14);
           box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 3px 4px rgba(0, 0, 0, 0.14);
+}
+
+.protein-request .default--btn {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.protein-request .default--btn .value {
+  color: #000000;
+}
+
+.protein-request .filter {
+  height: 20px !important;
+}
+
+.protein-request .add {
+  width: 20px !important;
+  height: 20px !important;
 }
 
 .protein-request__header {
@@ -4281,13 +4324,5 @@ i {
 
 .french-rose--btn {
   background: #EC407A;
-}
-
-.default--btn {
-  background: #EFF2F7;
-}
-
-.default--btn .value {
-  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/6305c93d80.js" crossorigin="anonymous"></script>
+
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <title>Delphi</title>
@@ -86,22 +88,15 @@
         </header>
 
         <aside class="side-nav">
-            <section class="flex short-overview">
+            <section class="flex short-overview" onclick="dropDownFunc()">
                 <div class="flex short-overview__frame">
                     <a href="#" class="short-overview__label">Project</a>
                     <a href="#" class="short-overview__placeholder" onclick="dropDownFunc()">Star Trek</a>
 
                 </div>
 
-                <div class="short-overview__icon" onclick="dropDownFunc()">
-                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
-                            <path d="M0 0L5 5L10 0H0Z" fill="white" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <rect x="-7" y="-10" width="24" height="24" fill="#BDBDBD" />
-                        </g>
-                    </svg>
+                <div class="short-overview__icon">
+                    <i class="fas fa-sort-down color--silver"></i>
                 </div>
                 <div class="dropdown-options">
                     <ul>
@@ -120,14 +115,7 @@
 
                 </div>
                 <div class="short-overview__icon">
-                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
-                            <path d="M0 0L5 5L10 0H0Z" fill="white" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <rect x="-7" y="-10" width="24" height="24" fill="#BDBDBD" />
-                        </g>
-                    </svg>
+                    <i class="fas fa-sort-down color--silver"></i>
                 </div>
                 <div class="rectangle border-bottom"></div>
 
@@ -138,15 +126,15 @@
 
 
             <div class="flex side-nav__menu">
-                <div class="oval">
+                <div class="oval oval--active">
                 </div>
-                <div class="flex side-nav__menu--placeholder side-nav__menu--placeholder-active">
+                <div class="flex side-nav__menu--placeholder">
                     <a href="target-review.html">Target Review</a>
                 </div>
 
             </div>
             <div class="flex side-nav__menu mt-8 ">
-                <div class="oval">
+                <div class="oval oval--active">
                 </div>
                 <div class="flex side-nav__menu--placeholder">
                     <a>Target Structure</a>
@@ -154,7 +142,7 @@
 
             </div>
             <div class="flex side-nav__menu mt-8">
-                <div class="oval">
+                <div class="oval oval--active">
                 </div>
                 <div class="flex side-nav__menu--placeholder">
                     <a href="target-forms.html">Target Forms</a>
@@ -165,7 +153,7 @@
 
             </div>
             <div class="flex side-nav__menu mt-9">
-                <div class="oval">
+                <div class="oval oval--active">
                 </div>
                 <div class="flex side-nav__menu--placeholder">
                     <a>Supplements</a>
@@ -173,15 +161,15 @@
 
             </div>
             <div class="flex side-nav__menu mt-9">
-                <div class="oval">
+                <div class="oval oval--active">
                 </div>
                 <div class="flex side-nav__menu--placeholder">
                     <a href="tracer.ligand.html">Tracer Ligand</a>
                 </div>
 
             </div>
-            <div class="flex side-nav__menu mt-9">
-                <div class="oval  oval--active">
+            <div class="flex side-nav__menu mt-9 side-nav__menu--active">
+                <div class="oval oval--active">
                 </div>
                 <div class="flex side-nav__menu--placeholder">
                     <a href="screening-plan.html">DEL Screening Plan</a>
@@ -189,7 +177,7 @@
 
             </div>
             <div class="flex side-nav__menu mt-9">
-                <div class="oval">
+                <div class="oval oval--active">
                 </div>
                 <div class="flex side-nav__menu--placeholder">
                     <a>Screening Conditions</a>
@@ -203,7 +191,7 @@
 
             </div>
             <div class="flex side-nav__menu mt-8">
-                <div class="oval">
+                <div class="oval oval--active">
                 </div>
                 <div class="flex side-nav__menu--placeholder">
                     <a>Protein Allocations</a>

@@ -20,6 +20,7 @@
 
 .add-target__menu-form {
     .form-btn {
+        border: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 14px;
@@ -86,10 +87,11 @@
     }
 
     .rect-btn {
+        border: none;
         margin-left: 10px;
         margin-top: 20px;
         border-radius: 2px;
-        padding: 10px 0;
+        // padding: 10px 0;
 
     }
 
@@ -117,13 +119,7 @@
         background: $french-rose;
     }
 
-    .default--btn {
-        background: $catsill-white;
 
-        .value {
-            color: $text-color--black;
-        }
-    }
 
     .killarney--btn {
         background: $killarney;
@@ -408,11 +404,25 @@
 }
 
 .add-target-form__footer {
+    margin-top: 16px;
+
     .rect-btn {
+        margin-left: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 2px;
         border: none;
+    }
+
+    .default--btn {
+        // background: $catsill-white;
+        background: transparent;
+        border-style: none;
+        -webkit-box-shadow: none;
+
+        .value {
+            color: $text-color--black;
+        }
     }
 
     .secondary-btn {

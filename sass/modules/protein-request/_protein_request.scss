@@ -9,6 +9,27 @@
     box-shadow: 0px 1px 8px rgba($text-color--black, 0.2),
         0px 3px 3px rgba($text-color--black, 0.12),
         0px 3px 4px rgba($text-color--black, 0.14);
+
+
+    .default--btn {
+        background: transparent;
+        box-shadow: none;
+
+
+        .value {
+            color: $text-color--black;
+        }
+    }
+
+    .filter {
+        height: 20px !important;
+    }
+
+    .add {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
 }
 
 .protein-request__header {
@@ -303,12 +324,4 @@
 
 .french-rose--btn {
     background: $french-rose;
-}
-
-.default--btn {
-    background: $catsill-white;
-
-    .value {
-        color: $text-color--black;
-    }
 }

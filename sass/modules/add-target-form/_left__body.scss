@@ -9,8 +9,6 @@
 
     .menu-card__content {
         margin-left: 24px;
-        // width: 260px;
-
         justify-content: space-between;
 
         h3 {
@@ -34,8 +32,6 @@
             cursor: pointer;
             width: 18px;
             height: 18px;
-            background: url(../../images/add-target-form/arrow_drop_down_3.png) no-repeat;
-
         }
 
     }
@@ -52,24 +48,19 @@
         margin-bottom: 12px;
 
         h3 {
-            color: $french-rose
+            color: $french-rose;
+            font-weight: bold;
         }
 
         .menu-card__content-image {
-
-            background: url(../../images/add-target-form/ic_arrow_drop_down_24px.png) no-repeat;
-            background-position: 4px 4px;
+            color: $french-rose;
+            transform: rotate(180deg);
+            margin-left: -12px;
+            align-self: center;
+            margin-top: 4px;
         }
     }
 
-}
-
-.add-target__menu-card--active {
-    .menu-card__content {
-        h3 {
-            font-weight: bold;
-        }
-    }
 }
 
 .add-target-menu-card-active__content {
