@@ -1025,6 +1025,10 @@ i {
           flex-direction: column;
 }
 
+.width--100 {
+  width: 100%;
+}
+
 .target-review {
   min-width: 1129px;
   width: 100%;
@@ -1115,7 +1119,6 @@ i {
 }
 
 .target-review__main-body {
-  width: 909px;
   padding-left: 28px;
   margin-top: 56px;
   margin-left: 220px;
@@ -1124,6 +1127,9 @@ i {
 .plan-header {
   width: 192px;
   margin-top: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .plan-header h2 {
