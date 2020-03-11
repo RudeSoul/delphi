@@ -72,6 +72,7 @@ function displayBlock() {
   i.classList.toggle("display-block");
   j.classList.toggle("opacity-half");
 }
+
 function profile() {
   alert("Profile Page");
 }
