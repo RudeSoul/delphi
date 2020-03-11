@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // outline: 1px solid red;
+}
+
+*::after {
+    // content: "";
+    // clear: both;
+    // display: table;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: $font-family--default;
+    background: rgba($body-color, 1);
+
+}
+
+ul,
+li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+p {
+    display: inline-block;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $primary-color;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $silver;
+    border-radius: 18px;
+    margin-right: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $silver;
+}
+
+img {
+    cursor: pointer;
+}
+
+svg {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+i {
+    cursor: pointer;
+}

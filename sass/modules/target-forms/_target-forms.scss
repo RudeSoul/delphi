@@ -1,0 +1,18 @@
+.target-forms {
+  // width: 1200px;
+  // margin: 0 auto;
+  background-color: $body-color;
+
+  .side-nav {
+    height: 1070px;
+  }
+}
+
+.target-form__save-btn {
+  width: 116px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 30px;
+}
