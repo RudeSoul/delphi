@@ -6,9 +6,19 @@
 }
 
 *::after {
+    // content: "";
+    // clear: both;
+    // display: table;
+}
+
+.clearfix:before,
+.clearfix:after {
     content: "";
-    clear: both;
     display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 body {
@@ -99,6 +109,8 @@ h6 {
 
 button {
     cursor: pointer;
+    border: none;
+    background: transparent;
 }
 
 i {

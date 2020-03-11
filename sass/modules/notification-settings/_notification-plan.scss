@@ -1,6 +1,6 @@
 .notification-settings {
-    width: 1074px;
-    margin: 0 auto;
+    // width: 1074px;
+    // margin: 0 auto;
     background-color: $primary-color;
 
     .side-nav {
@@ -19,6 +19,8 @@
 
 .notification-main {
     flex-direction: column;
+    margin-top: 56px;
+    margin-left: 220px;
 }
 
 .notification-settings__heading {

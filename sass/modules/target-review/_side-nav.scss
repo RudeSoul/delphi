@@ -3,7 +3,10 @@
     height: 3542.2px;
     background: $background-color--side-nav;
     padding-top: 26px;
-    float: left;
+    // float: left;
+
+    position: fixed;
+    top: 40px;
 }
 
 .short-overview--margin-top {

@@ -31,6 +31,7 @@
 
 .smallcard__profile {
     .smallcard__header {
+        justify-content: space-between;
 
         h2 {
             width: 99px;
@@ -50,8 +51,8 @@
             background: url(../../images/main-body/ic_add_circle_24pxG.png);
             background-repeat: no-repeat;
             background-size: cover;
-
-            margin-left: 40px;
+            border: none;
+            margin-right: 20px;
 
             span {
                 visibility: hidden;

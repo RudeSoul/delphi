@@ -65,3 +65,13 @@ function goBiologicalTab() {
 function save() {
   alert("saved");
 }
+
+function displayBlock() {
+  let i = document.getElementById("burger-menu__content");
+  let j = document.getElementById("burger-menu");
+  i.classList.toggle("display-block");
+  j.classList.toggle("opacity-half");
+}
+function profile() {
+  alert("Profile Page");
+}

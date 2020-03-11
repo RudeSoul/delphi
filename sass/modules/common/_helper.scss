@@ -42,3 +42,17 @@
 .visibility--none {
     visibility: hidden;
 }
+
+.display-block {
+    display: block;
+}
+
+.opacity-half {
+    opacity: 0.5 !important;
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

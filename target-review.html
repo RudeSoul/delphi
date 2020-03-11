@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <div class="target-review">
+    <div class="flex target-review">
 
         <header class="flex header">
             <div class="flex header-menu">
-                <div class="burger-menu">
+                <div class="burger-menu" id="burger-menu" onclick="displayBlock()">
 
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="white" />
@@ -56,9 +56,17 @@
                     <a href="#">Delphi</a>
 
                 </div>
+
+                <div id="burger-menu__content" class="burger-menu__content">
+                    <nav class="flex burger-menu__content-nav ">
+                        <div>menu option 1 </div>
+                        <div>menu option 2</div>
+                        <div>menu option 3</div>
+                    </nav>
+                </div>
             </div>
 
-            <div class="flex profile">
+            <div class="flex profile" onclick="profile()">
                 <div class="flex profile__image">
                     <img src="images/header/Rectangle 19.png" draggable="false" alt="profile">
                 </div>
@@ -209,10 +217,8 @@
                     <div class="flex ic-lunch ic-lunch__ntrk1">
                         <span class="ic-lunch__label">Symbol</span>
                         <span class="ic-lunch__placeholder">TRKA</span>
-                        <span class="ic-lunch__icon">
-
+                        <span class="ic-lunch__icon ">
                             <img src="images/main-body/ic_launch_24px.png" draggable="false" alt="">
-
                         </span>
                     </div>
 
@@ -483,7 +489,7 @@
             </article>
 
             <article class="card card--l card__documents">
-                <header class="documents__header">
+                <header class="clearfix documents__header">
                     <h2>Documents</h2>
                     <section class="documents-header__menu">
                         <div class="filterby">
@@ -515,18 +521,18 @@
                                 </div>
                             </div>
                             <div class="flex header-right">
-                                <button class="flex btn-rounded btn-1">
+                                <div class="flex btn-rounded btn-1">
                                     <span class="tagname">Tags 1</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
-                                <button class="flex btn-rounded btn-1 btn-2">
+                                    </button>
+                                </div>
+                                <div class="flex btn-rounded btn-1 btn-2">
                                     <span class="tagname">Tags 2</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
+                                    </button>
+                                </div>
                                 <div class="more"><img src="images/main-body/ic_more_vert_24px.png" alt="more"></div>
                             </div>
                         </div>
@@ -548,18 +554,18 @@
                                 </div>
                             </div>
                             <div class="flex header-right">
-                                <button class="flex btn-rounded btn-1">
+                                <div class="flex btn-rounded btn-1">
                                     <span class="tagname">Tags 1</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
-                                <button class="flex btn-rounded btn-1 btn-2">
+                                    </button>
+                                </div>
+                                <div class="flex btn-rounded btn-1 btn-2">
                                     <span class="tagname">Tags 2</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
+                                    </button>
+                                </div>
                                 <div class="more"><img src="images/main-body/ic_more_vert_24px.png" alt="more"></div>
                             </div>
                         </div>
@@ -581,18 +587,18 @@
                                 </div>
                             </div>
                             <div class="flex header-right">
-                                <button class="flex btn-rounded btn-1">
+                                <div class="flex btn-rounded btn-1">
                                     <span class="tagname">Tags 1</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
-                                <button class="flex btn-rounded btn-1 btn-2">
+                                    </button>
+                                </div>
+                                <div class="flex btn-rounded btn-1 btn-2">
                                     <span class="tagname">Tags 2</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
+                                    </button>
+                                </div>
                                 <div class="more"><img src="images/main-body/ic_more_vert_24px.png" alt="more"></div>
                             </div>
                         </div>
@@ -614,18 +620,18 @@
                                 </div>
                             </div>
                             <div class="flex header-right">
-                                <button class="flex btn-rounded btn-1">
+                                <div class="flex btn-rounded btn-1">
                                     <span class="tagname">Tags 1</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
-                                <button class="flex btn-rounded btn-1 btn-2">
+                                    </button>
+                                </div>
+                                <div class="flex btn-rounded btn-1 btn-2">
                                     <span class="tagname">Tags 2</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
+                                    </button>
+                                </div>
                                 <div class="more"><img src="images/main-body/ic_more_vert_24px.png" alt="more"></div>
                             </div>
                         </div>
@@ -647,18 +653,18 @@
                                 </div>
                             </div>
                             <div class="flex header-right">
-                                <button class="flex btn-rounded btn-1">
+                                <div class="flex btn-rounded btn-1">
                                     <span class="tagname">Tags 1</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
-                                <button class="flex btn-rounded btn-1 btn-2">
+                                    </button>
+                                </div>
+                                <div class="flex btn-rounded btn-1 btn-2">
                                     <span class="tagname">Tags 2</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
+                                    </button>
+                                </div>
                                 <div class="more"><img src="images/main-body/ic_more_vert_24px.png" alt="more"></div>
                             </div>
                         </div>
@@ -680,18 +686,18 @@
                                 </div>
                             </div>
                             <div class="flex header-right">
-                                <button class="flex btn-rounded btn-1">
+                                <div class="flex btn-rounded btn-1">
                                     <span class="tagname">Tags 1</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
-                                <button class="flex btn-rounded btn-1 btn-2">
+                                    </button>
+                                </div>
+                                <div class="flex btn-rounded btn-1 btn-2">
                                     <span class="tagname">Tags 2</span>
-                                    <span class="image">
+                                    <button class="image">
                                         <img src="images/main-body/Vector.png" alt="close">
-                                    </span>
-                                </button>
+                                    </button>
+                                </div>
                                 <div class="more"><img src="images/main-body/ic_more_vert_24px.png" alt="more"></div>
                             </div>
                         </div>
@@ -1002,11 +1008,11 @@
                         <div class="value">
                             <h3>Disease Association</h3>
                         </div>
-                        <div class="addicon">
+                        <button class="addicon">
                             <!-- <i class="fas fa-plus-circle color--oslo-gray"></i> -->
                             <img src="images/main-body/ic_add_circle_24pxG.png" alt="">
 
-                        </div>
+                        </button>
                     </div>
                     <div class="title title1">
 
@@ -1043,12 +1049,12 @@
                     <div class="flex heading">
                         <h2>References</h2>
                         <div class="flex icons">
-                            <div class="filter">
+                            <button class="filter">
                                 <img src="images/main-body/filter_list.png" alt="">
-                            </div>
-                            <div class="add">
+                            </button>
+                            <button class="add">
                                 <img src="images/main-body/ic_add_circle_24pxG.png" alt="">
-                            </div>
+                            </button>
                         </div>
                     </div>
                     <div class="rightbar__all-content">
@@ -1303,9 +1309,9 @@
                     <h2>
                         Investigators
                     </h2>
-                    <div class="image">
+                    <button class="image">
                         <span>ad</span>
-                    </div>
+                    </button>
 
                 </div>
                 <div class="flex smallcard__profiles">

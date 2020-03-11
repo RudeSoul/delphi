@@ -1,7 +1,9 @@
 .screening-plan {
     width: 2158px;
-    margin: 0 auto;
+    // margin: 0 auto;
     background-color: $body-color;
+    // margin-top: 56px;
+    // margin-left: 220px;
 
     .side-nav {
         height: 1068px;
@@ -9,9 +11,11 @@
 }
 
 .screening__heading {
-    margin-top: 26px;
-    margin-left: 26px;
+    margin-top: 82px;
+    margin-left: 246px;
     width: fit-content;
+    // margin-top: 56px;
+    // margin-left: 220px;
 
     h1 {
         font-style: normal;
@@ -25,4 +29,7 @@
 .screening__mainbody {
     flex-direction: column;
     flex-wrap: wrap;
+    flex-grow: 1;
+    // margin-top: 56px;
+    // margin-left: 220px;
 }
