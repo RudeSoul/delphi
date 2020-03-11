@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6305c93d80.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <title>Delphi</title>
+    <!--build:css css/style.css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!--endbuild-->
+    <script src="script.js" defer> </script>
+
+</head>
+
+<body>
+    <div class="target-forms">
+
+        <header class="flex header">
+            <div class="flex header-menu">
+                <div class="flex burger-menu">
+                    <!-- <img src="images/header/Vector.png" alt="burger menu"> -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="white" />
+                    </svg>
+
+                </div>
+                <!-- <div class="burger-menu__items">
+                    <ul>
+                        <li>
+                            <a href="#">a</a>
+                        </li>
+                        <li>
+                            <a href="#">a</a>
+                        </li>
+                        <li>
+                            <a href="#">a</a>
+                        </li>
+                        <li>
+                            <a href="#">a</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="flex dash">
+                    <!-- <img src="images/header/Rectangle 14.png" alt="dash"> -->
+                    <svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.3" width="1" height="24" fill="white" />
+                    </svg>
+
+
+                </div>
+                <div class="flex home-icon">
+                    <img src="images/header/ic_home_24px.png" alt="home">
+                    <!-- <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18"
+                            height="15">
+                            <path
+                                d="M7.33342 14.6667V9.66667H10.6667V14.6667H14.8334V8H17.3334L9.00008 0.5L0.666748 8H3.16675V14.6667H7.33342Z"
+                                fill="white" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <rect x="-1" y="-2" width="20" height="20" fill="white" />
+                        </g>
+                    </svg> -->
+
+
+                </div>
+                <div class="flex company-name">
+                    <a href="#">Delphi</a>
+
+                </div>
+
+            </div>
+            <div class="flex profile">
+                <div class="flex profile__image">
+                    <img src="images/header/Rectangle 19.png" alt="profile">
+                </div>
+                <div class="flex profile__name">
+                    <a href="#">John Smith</a>
+                </div>
+            </div>
+
+
+        </header>
+
+        <aside class="side-nav">
+            <section class="flex short-overview" onclick="dropDownFunc()">
+                <div class="flex short-overview__frame">
+                    <a href="#" class="short-overview__label">Project</a>
+                    <a href="#" class="short-overview__placeholder" onclick="dropDownFunc()">Star Trek</a>
+
+                </div>
+
+                <div class="short-overview__icon">
+                    <i class="fas fa-sort-down color--silver"></i>
+                </div>
+                <div class="dropdown-options">
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#"> Option 2</a></li>
+                        <li><a href="#"> Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="rectangle border-bottom"></div>
+
+            </section>
+            <section class="flex short-overview short-overview--margin-top ">
+                <div class="flex short-overview__frame">
+                    <a href="#" class="short-overview__label">Target</a>
+                    <a href="#" class="short-overview__placeholder">NTRK1</a>
+
+                </div>
+                <div class="short-overview__icon">
+                    <i class="fas fa-sort-down color--silver"></i>
+                </div>
+                <div class="rectangle border-bottom"></div>
+
+            </section>
+            <div class="rectangle rectangle--bar-l">
+
+            </div>
+
+
+            <div class="flex side-nav__menu">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a href="target-review.html">Target Review</a>
+                </div>
+
+            </div>
+            <div class="flex side-nav__menu mt-8 ">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a>Target Structure</a>
+                </div>
+
+            </div>
+            <div class="flex side-nav__menu mt-8 side-nav__menu--active">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a href="target-forms.html">Target Forms</a>
+                </div>
+
+            </div>
+            <div class="rectangle rectangle--bar-m">
+
+            </div>
+            <div class="flex side-nav__menu mt-9">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a>Supplements</a>
+                </div>
+
+            </div>
+            <div class="flex side-nav__menu mt-9">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a href="tracer.ligand.html">Tracer Ligand</a>
+                </div>
+
+            </div>
+            <div class="flex side-nav__menu mt-9">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a href="screening-plan.html">DEL Screening Plan</a>
+                </div>
+
+            </div>
+            <div class="flex side-nav__menu mt-9">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a>Screening Conditions</a>
+                </div>
+
+            </div>
+            <div class="rectangle rectangle--bar-m mt-8">
+
+            </div>
+            <div class="rectangle rectangle--bar-m rectangle--bar-m-x ">
+
+            </div>
+            <div class="flex side-nav__menu mt-8">
+                <div class="oval oval--active">
+                </div>
+                <div class="flex side-nav__menu--placeholder">
+                    <a>Protein Allocations</a>
+                </div>
+
+            </div>
+        </aside>
+
+        <main class="flex target-form__mainbody">
+            <div class="target-form__heading">
+                <h1>Project NTRK1 / Target Forms</h1>
+            </div>
+            <div class="flex card target-form__card">
+
+                <article class="left-card">
+                    <div class="flex form-card__heading">
+                        <h2>Target Forms</h2>
+                        <div class="flex add-arrange-form">
+                            <img src="images/target-form/filter_list.png" class="filter" alt="">
+
+                            <a href="add-target-form.html">
+
+                                <i class="fas fa-plus-circle color add color--oslo-gray"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <section class="flex left-card__menu menu-items menu-items--active" id="targetFormMenuItems"
+                        onclick="targetFormMenuItems()">
+                        <div class="info-icon color--oslo-gray info-icon--active ">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Avi-NTRK1(1-89/116-796)</h3>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+                        </div>
+                        <div class="menu-details menu-details--first">
+                            <div class="active-arrow-icon">
+                                <img src="images/target-form/arrow_forward.png" alt="forward">
+                            </div>
+                            <div class="active-arrow-value">ELONB (1-112)</div>
+                        </div>
+
+                        <div class=" menu-details menu-details--last">
+                            <div class="active-arrow-icon">
+                                <img src="images/target-form/arrow_forward.png" alt="forward">
+                            </div>
+                            <div class="active-arrow-value">ELONB (1-112)</div>
+                        </div>
+                    </section>
+                    <section class="flex left-card__menu menu-items " id="targetFormMenuItemsSecond"
+                        onclick="targetFormMenuItemsSecond()">
+                        <div class="info-icon color--oslo-gray info-icon--active">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Avi-NTRK1(1-89/116-796)</h3>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+
+                        </div>
+
+                        <div class="menu-details menu-details--first">
+                            <div class="active-arrow-icon">
+                                <img src="images/target-form/arrow_forward.png" alt="forward">
+                            </div>
+                            <div class="active-arrow-value">ELONB (1-112)</div>
+                        </div>
+
+                        <div class=" menu-details menu-details--last">
+                            <div class="active-arrow-icon">
+                                <img src="images/target-form/arrow_forward.png" alt="forward">
+                            </div>
+                            <div class="active-arrow-value">ELONB (1-112)</div>
+                        </div>
+                    </section>
+                    <section class="flex left-card__menu menu-items">
+                        <div class="info-icon color--oslo-gray">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Avi-NTRK1(1-89/116-796)</h3>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+
+                        </div>
+                    </section>
+                    <section class="flex left-card__menu menu-items">
+                        <div class="info-icon color--oslo-gray">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Avi-NTRK1(1-89/116-796)</h3>
+                        <div class="arrow-icon color--oslo-gray arrow-icon--active">
+                            <i class="fas fa-sort-down "></i>
+
+                        </div>
+                    </section>
+
+
+
+                </article>
+                <section class="right-card">
+
+                    <div class="review-card-right">
+                        <article class="flex target-form__right-card-heading">
+                            <h2>Avi-NTRK1(1-796)-DP</h2>
+                            <section class="flex view-qc-info">
+                                <div class="lunchicon">
+                                    <img src="images/target-form/launch.png" alt="lunch">
+                                </div>
+                                <span>View QC Info</span>
+                            </section>
+
+                    </div>
+
+                    <section class="flex right-card__bar">
+                        <div class="value-bar">
+
+                        </div>
+                        <div class="yellow-bar"></div>
+                        <div class="blue-bar"></div>
+                    </section>
+                    <section class="flex review-circular-indicator">
+                        <div class="structural-biology__footer-content">
+                            <div class="circular-indicator circular-indicator--selective-yellow">
+                            </div>
+                            <div class="structural-biology__label">Avi</div>
+                        </div>
+                        <div class="structural-biology__footer-content">
+                            <div class="circular-indicator circular-indicator--electric-violet">
+                            </div>
+                            <div class="structural-biology__label">NTRK1</div>
+                        </div>
+                    </section>
+                    </article>
+                    <div class="rectangle"></div>
+
+                    <section class="flex review-form__short-overview">
+                        <div class="flex overview-heading">
+                            <h2>Needed By Groups</h2>
+                            <div class="btn-rounded overview-heading-btn">
+                                <span>DEL Screening</span>
+                                <button class="image">
+
+                                    <i class="fas fa-times size--m"></i>
+                                </button>
+                            </div>
+
+
+                            <div class="btn-rounded overview-heading-btn overview-heading-btn--ml">
+                                <span>SPR</span>
+                                <button class="image">
+
+                                    <i class="fas fa-times size--m"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rectangle"></div>
+
+
+                    </section>
+
+                    <section class="flex review-form__short-overview review-form__short-overview--tags">
+                        <div class="overview-heading">
+                            <h2>Tags</h2>
+                            <div class="inline-block btn-rounded overview-heading-btn">
+                                <span>Entrectinib</span>
+                                <button class="image">
+
+                                    <i class="fas fa-times color--white size--m"></i>
+                                </button>
+                            </div>
+                            <div class="inline-block addicon">
+                                <!-- <img src="images/target-form/ic_add_circle_24pxB.png" alt="add"> -->
+                                <i class="fas fa-plus-circle color--blue-ribbion add "></i>
+
+                            </div>
+                        </div>
+                        <div class="rectangle"></div>
+
+
+                    </section>
+
+                    <article class="review-form__comments">
+                        <h3>Comments</h3>
+                        <section class="comment comment--first">
+                            <div class="flex profile">
+                                <div class="flex profile__image">
+                                    <img src="images/main-body/Oval2.png" alt="profile">
+                                </div>
+                                <div class="flex profile__name">
+                                    <div class="name">Tomothy Nguyen</div>
+                                    <div class="description">Officia officia duis nostrud dolor est laborum non ea eu
+                                        minim incididunt. Magna fugiat deserunt aliquip consectetur elit non et enim
+                                        mollit esse ullamco proident irure.</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="rectangle"></div>
+                        </section>
+
+                        <section class="comment comment--last">
+                            <div class="flex profile">
+                                <div class="flex profile__image">
+                                    <img src="images/main-body/Oval2.png" alt="profile">
+                                </div>
+                                <section class="flex profile__name">
+                                    <div class="name">Tomothy Nguyen</div>
+                                    <div class="description">Officia officia duis nostrud dolor est laborum non ea eu
+                                        minim incididunt. Magna fugiat deserunt aliquip consectetur elit non et enim
+                                        mollit esse ullamco proident irure.</a>
+
+                                    </div>
+                                </section>
+
+                            </div>
+                        </section>
+                    </article>
+
+                    <article class="review-form__location">
+
+                        <div class="flex location__header">
+                            <div class="header__label label--1">
+                                Locations
+                            </div>
+                            <div class="header__label label--2">
+                                Group
+                            </div>
+
+                        </div>
+                        <div class="flex location__body">
+                            <div class="flex location__body--1">
+                                Lab 1/Freezer 2/Shelf4/Rack5/Tube A5
+                            </div>
+                            <div class="flex location__body--2">
+                                DEL Screening
+                            </div>
+                        </div>
+                        <div class="flex location__body">
+                            <div class="flex location__body--1">
+                                Lab 1/Fridge 2/Shelf 4/Rack 10/B2
+                            </div>
+                            <div class="flex location__body--2">
+                                SPR
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="flex right-card__footer">
+
+                        <section class="flex short-overview">
+                            <div class="flex short-overview__frame">
+                                <a href="#" class="short-overview__label">Status</a>
+                                <a href="#" class="short-overview__placeholder">Finalized</a>
+
+                            </div>
+                            <section class="short-overview__icon">
+                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10"
+                                        height="5">
+                                        <path d="M0 0L5 5L10 0H0Z" fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0)">
+                                        <rect x="-7" y="-10" width="24" height="24" fill="#BDBDBD" />
+                                    </g>
+                                </svg>
+                            </section>
+                            <div class="rectangle"></div>
+
+                        </section>
+
+                        <section class="flex short-overview">
+                            <div class="flex short-overview__frame">
+                                <a href="#" class="short-overview__label">Availability</a>
+                                <a href="#" class="short-overview__placeholder">Complete</a>
+
+                            </div>
+
+                            <div class="rectangle"></div>
+
+                        </section>
+
+                        <div class="flex right-card__footer--btn">
+
+                            <button class="rect-btn blaze-orange--btn">
+                                <span class="value">
+                                    View Details
+                                </span>
+                            </button>
+                            <button class="rect-btn french-rose--btn">
+                                <img src="images/target-form/Compare.png" alt="compare">
+                                <span class="value">
+                                    Compare
+                                </span>
+                            </button>
+                            <a href="protein-request.html"> <button class="rect-btn blue-ribbion--btn">
+                                    <span class="value">
+                                        Request this Protein
+                                    </span>
+                                </button> </a>
+
+                        </div>
+
+                    </article>
+
+
+                </section>
+            </div>
+            <button class="flex rect-btn french-rose--btn target-form__save-btn">
+                <span class="value">
+                    Save
+                </span>
+            </button>
+        </main>
+
+
+
+</body>
+
+
+</html>
