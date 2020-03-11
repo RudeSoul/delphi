@@ -1,0 +1,95 @@
+.side-nav {
+    width: 220px;
+    height: 3542.2px;
+    background: $background-color--side-nav;
+    padding-top: 26px;
+    // float: left;
+
+    position: fixed;
+    top: 40px;
+}
+
+.short-overview--margin-top {
+    margin-top: 18px;
+
+    .short-overview__icon {
+        margin-left: 120px;
+    }
+}
+
+.rectangle--bar-l {
+    margin-top: 26px;
+    width: 220px;
+}
+
+.side-nav__menu {
+    margin-left: 8px;
+    margin-top: 26px;
+
+    @include m(placeholder) {
+        margin-left: 12px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        opacity: 0.7;
+
+        a {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+
+            color: $primary-color;
+
+        }
+
+    }
+
+}
+
+.side-nav__menu--active {
+    .oval--active {
+        width: 20px;
+        height: 20px;
+        margin-left: 2px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-image: url(../../images/side-nav/Oval--active.png);
+        background-size: cover;
+
+    }
+
+    .side-nav__menu--placeholder {
+        margin-left: 10px;
+
+        opacity: 1;
+    }
+
+}
+
+.oval {
+    margin-left: 4px;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../images/side-nav/Oval.png);
+
+}
+
+
+.rectangle--bar-m {
+    width: 163px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+.rectangle--bar-m-x {
+    margin-top: 0px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-9 {
+    margin-top: 8px;
+}

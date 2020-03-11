@@ -1,0 +1,88 @@
+.structural-biology {
+    width: 480px;
+    margin-top: 32px;
+    margin-left: 12px;
+    background-image: url(../../images/main-body/Bitmap.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 79.35px 0;
+
+    @include e(top-content) {
+        margin: 0;
+        align-items: center;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 20px;
+        color: $text-color--black;
+    }
+
+    .fullscreen {
+        margin-top: 16px;
+        margin-left: 270px;
+    }
+
+    .more {
+        margin-left: 10px;
+        margin-top: 12px;
+    }
+}
+
+.structural-btn {
+    margin-top: 17px;
+    flex-direction: column;
+}
+
+.btn__structural {
+    width: 59px;
+    padding-left: 8px;
+    padding-right: 4px;
+    margin-bottom: 4px;
+
+    h3 {
+        float: left;
+        width: auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 4px;
+
+        color: $plantation;
+    }
+
+    img {
+        float: right;
+        width: fit-content;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        text-align: right;
+    }
+}
+
+.structural-biology__footer {
+    margin-left: 4px;
+    margin-top: 258px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.structural-biology__footer-content {
+    display: flex;
+
+    .structural-biology__label {
+        width: fit-content;
+        margin-left: 8px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+
+        color: $indicator__text-color;
+    }
+}
